@@ -1,0 +1,92 @@
+site_name: ALCF User Guide
+nav:
+  - Home: README.md
+  - Polaris:
+    - Hardware Overview:
+      - Polaris Machine Overview: polaris/hardware-overview/machine-overview.md
+      - Slingshot Network: polaris/hardware-overview/slingshot-network.md
+    - Compiling And Linking:
+      - Compiling and Linking Overview: polaris/compiling-and-linking/compiling-and-linking-overview.md
+      - Programming Models: polaris/compiling-and-linking/polaris-programming-models.md
+      - Example Program and Makefile: polaris/compiling-and-linking/polaris-example-program-makefile.md
+      - NVIDIA Compilers: polaris/compiling-and-linking/nvidia-compiler-polaris.md
+      - Clang Compiler: polaris/compiling-and-linking/clang-compiler-polaris.md
+      - Continuous Integration: polaris/compiling-and-linking/continuous-integration-polaris.md
+    - Queueing and Running Jobs on Polaris:
+      - Job Scheduling and Execution: polaris/queueing-and-running-jobs/job-and-queue-scheduling.md
+      - Cobalt to PBS option Comparison: polaris/queueing-and-running-jobs/pbs-qsub-options-table.md
+      - The Grounkulator (Job Status Display): polaris/queueing-and-running-jobs/gronkulator.md
+      - PBS Admin Quick Start Guide: polaris/queueing-and-running-jobs/pbs-admin-quick-start-guide.md
+    - Data Management:
+        - ALCF Community Data Co-Op: polaris/data-management/acdc/acdc-overview.md
+        - Data Transfer:
+          - SFTP and SCP: polaris/data-management/data-transfer/sftp-scp.md
+        - File System & Storage:
+          - Polaris Disk Quota: polaris/data-management/filesystem-and-storage/polaris-disk-quota.md
+    - Applications and Libraries:
+        - Applications:
+            - LAMMPS: polaris/applications-and-libraries/applications/lammps.md
+    - Data Science Workflows:
+        - Balsam: polaris/data-science-workflows/balsam.md
+    - Programming Models: 
+        - OpenMP: polaris/programming-models/openmp-polaris.md
+    - Debugging Tools: polaris/debugging-tools/debugging-overview.md
+    - Performance Tools: polaris/performance-tools/performance-overview.md
+  - Edith (Edge Dev Testbed):
+      - Getting Started: polaris/queueing-and-running-jobs/edtb.md
+
+theme:
+  name: 'material'
+  custom_dir: overrides
+  language: 'en'
+  palette:
+    scheme: alcf
+  font:
+    text: proxima-nova
+  features:
+    - tabs
+    - instant
+    - search.highlight
+    - search.suggest
+  logo: 'images/Argonne_wireframe_white_transparent.png'
+  favicon: 'images/alcf_favicon.ico'
+
+extra_css:
+  - stylesheets/alcf-extra.css
+
+extra_javascript:
+  - javascripts/alcf-extra.js
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - pymdownx.superfences
+  - tables
+  - attr_list
+  - md_in_html
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+repo_name: 'argonne-lcf/alcf-userguide'
+repo_url: 'https://github.com/argonne-lcf/polaris-userdocs'
+
+extra:
+  social:
+    - icon: 'fontawesome/brands/github-alt'
+      link: 'https://github.com/argonne-lcf/polaris-userdocs'
+
+plugins:
+  - search
+  - mkdocs-video:
+      is_video: True
+
+
