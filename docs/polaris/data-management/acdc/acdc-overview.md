@@ -1,4 +1,6 @@
-# ALCF Community Data Co-Op (ACDC) ##Overview of the ALCF Community Data Co-Op (ACDC)
+# ALCF Community Data Co-Op (ACDC) 
+
+## Overview of the ALCF Community Data Co-Op (ACDC)
 
 The ALCF Community Data Co-Op (ACDC) powers data-driven research by providing a platform for data access and sharing, and value-added services for data discovery and analysis.
 
@@ -22,7 +24,9 @@ The ACDC portal is a deployment of Django Globus Portal Framework customized for
 3. **Authentication:** Globus is used for authentication and identity needed to access the system. As Globus has built-in support for federated logins, users can access ACDC using their campus or institution federated username and passcode
 
 If you are new to the ALCF, follow these instructions on how to transfer your data to ACDC:
-== Add page: Transfer your data to ACDC webpage{:target="_blank"} ==
+== Add page: Transferring your data to ACDC ==
 
 If you already have an ALCF account, follow these instructions on how to share your data:
-==  Transferring Data to Eagle {:target="_blank"} ==
+[Sharing Data to Eagle](eagle-data-sharing.md)
+
+
