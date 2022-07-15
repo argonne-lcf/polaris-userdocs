@@ -1,10 +1,17 @@
-# ALCF User Guide
+# Polaris User Guide
 
-## Contributing to Documentation
+## Note: Our Polaris documentation is still under development. Please direct all questions, requests, and feedback to [support@alcf.anl.gov](support@alcf.anl.gov). **Please don't submit PRs against this repository.**
+
+## About Polaris
+The Polaris software environment is equipped with the HPE Cray programming environment, HPE Performance Cluster Manager (HPCM) system software, and the ability to test programming models, such as OpenMP and SYCL, that will be available on Aurora and the next-generation of DOE’s high performance computing systems. 
+
+Polaris users will also benefit from NVIDIA’s HPC software development kit, a suite of compilers, libraries, and tools for GPU code development. 
+
+## Instructions for building/viewing pages locally 
 
 ### Python environment
 
-To build documentation locally, you need a Python environment with `mkdocs` installed.  Check that Python 3.6+ is installed:
+To build documentation locally, you need a Python environment with `mkdocs` installed. Check that Python 3.6+ is installed:
 
 ```
 $ python --version
@@ -29,7 +36,7 @@ $ git clone git@github.com:argonne-lcf/alcf-userguide.git
 To install `mkdocs` in the current environment: 
 
 ```
-$ cd alcf-userguide
+$ cd polaris-userguide
 $ make install-dev
 ```
 
@@ -40,31 +47,4 @@ Run `mkdocs serve` or `make serve` to auto-build and serve the docs for preview 
 $ make serve
 ```
 
-### Working on documentation
-
-* All commits must have the commit comment
-* Create your own branch from the main branch.  For this writing we are using YOURBRANCH as an example.
-```
-$ cd alcf-userguide
-$ git fetch --all
-$ git checkout main
-$ git pull origin main
-$ git checkout -b YOURBRANCH
-$ git push -u origin YOURBRANCH
-```
-* Commit your changes to the remote repo
-```
-$ cd alcf-userguide
-$ git status                         # check the status of the files you have editted
-$ git commit -a -m "Updated docs"    # preferably one issue per commit
-$ git status                         # should say working tree clean
-$ git push origin YOURBRANCH         # push YOURBRANCH to origin
-$ git checkout main                  # move to the local main
-$ git pull origin main               # pull the remote main to your local machine
-$ git checkout YOURBRANCH            # move back to your local branch
-$ git merge main                     # merge the local develop into **YOURBRANCH** and
-                                     # make sure NO merge conflicts exist
-$ git push origin YOURBRANCH         # push the changes from local branch up to your remote branch
-```
-* Create merge request from https://github.com/argonne-lcf/alcf-userguide from YOURBRANCH to main branch.
 
