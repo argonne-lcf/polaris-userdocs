@@ -86,6 +86,7 @@ extra:
 
 plugins:
   - search
-
+#  - mkdocs-video:
+#      is_video: True
 
 
