@@ -3,7 +3,7 @@ This is temporary documentation meant for users who have early access to the Pol
 
 **Please don't submit PRs against this repository.**
 
-## GPU Hackathon Attendees ##
+## GPU Hackathon Attendees: ##
 Please direct questions/issues to your mentor and/or post in the #cluster_support channel in the Hackathon Slack workspace.
 
 ## ESP/ECP Users: ## 
