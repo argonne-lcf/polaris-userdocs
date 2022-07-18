@@ -2,7 +2,13 @@
 
 ## Note: Our Polaris documentation is still under development. 
 
-Please direct all questions, requests, and feedback to [support@alcf.anl.gov](support@alcf.anl.gov). **Please don't submit PRs against this repository.**
+## GPU Hackathon Attendees ##
+Please direct questions/issues to your mentor and/or post in the #cluster_support channel in the Hackathon Slack workspace.
+
+## ESP/ECP Users and ALCF Staff ##
+Please direct all questions, requests, and feedback to [support@alcf.anl.gov](support@alcf.anl.gov). 
+
+**Please don't submit PRs against this repository.**
 
 ## About Polaris
 The Polaris software environment is equipped with the HPE Cray programming environment, HPE Performance Cluster Manager (HPCM) system software, and the ability to test programming models, such as OpenMP and SYCL, that will be available on Aurora and the next-generation of DOE’s high performance computing systems. 
