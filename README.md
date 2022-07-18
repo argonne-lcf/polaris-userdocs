@@ -3,7 +3,10 @@ This is temporary documentation meant for users who have early access to the Pol
 
 **Please don't submit PRs against this repository.**
 
-## Users: ## 
+## GPU Hackathon Attendees ##
+Please direct questions/issues to your mentor and/or post in the #cluster_support channel in the Hackathon Slack workspace.
+
+## ESP/ECP Users: ## 
 As you know, Polaris is a new machine at the ALCF, and you will be among the first set of researchers to use Polaris. Because of this, our Polaris documentation is still under development. Please direct all questions, requests, and feedback to <support@alcf.anl.gov>.
 
 ## ALCF Staff: ## 
