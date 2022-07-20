@@ -11,7 +11,7 @@ Please direct all questions, requests, and feedback to [support@alcf.anl.gov](su
 **Please don't submit PRs against this repository.**
 
 ## Job Charging on Polaris ##
-Charging on Polaris will begin on July 19th, but charges will not be reflected in sbank output until July 25.
+Charging on Polaris will begin on July 25th. Jobs run prior to this date will not be charged to the project allocation.
 
 ## About Polaris
 The Polaris software environment is equipped with the HPE Cray programming environment, HPE Performance Cluster Manager (HPCM) system software, and the ability to test programming models, such as OpenMP and SYCL, that will be available on Aurora and the next-generation of DOE’s high performance computing systems. 
