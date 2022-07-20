@@ -2,11 +2,12 @@ site_name: ALCF User Guide
 nav:
   - Home: README.md
   - Polaris:
-    - Known Issues: polaris/known_issues.md
+    - Getting Started: polaris/getting-started.md
+    - Known Issues: polaris/known-issues.md
     - Hardware Overview:
       - Polaris Machine Overview: polaris/hardware-overview/machine-overview.md
       - Slingshot Network: polaris/hardware-overview/slingshot-network.md
-    - Compiling And Linking:
+    - Compiling and Linking:
       - Compiling and Linking Overview: polaris/compiling-and-linking/compiling-and-linking-overview.md
       - Programming Models: polaris/compiling-and-linking/polaris-programming-models.md
       - Example Program and Makefile: polaris/compiling-and-linking/polaris-example-program-makefile.md
