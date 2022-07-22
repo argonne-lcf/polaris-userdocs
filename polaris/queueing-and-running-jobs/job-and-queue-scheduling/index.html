@@ -1,0 +1,2849 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../../images/alcf_favicon.ico">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
+    
+    
+      
+        <title>Job Scheduling and Execution - ALCF User Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=proxima-nova:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"proxima-nova";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/alcf-extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+<link rel="stylesheet" href="https://use.typekit.net/pxo0nvo.css">
+
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="alcf" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#documentation-tools" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      <!-- Header -->
+<!-- --------------------------------------------------------------------- -->
+
+<!-- component: header -->
+
+
+<header class="md-header" data-md-component="header">
+
+
+<div class="header--primary">
+
+
+<div class="grid">
+
+	<div class="header__site-title">
+		<h1>Argonne Leadership Computing Facility</h1>
+	</div>
+
+
+
+
+
+	<nav class="header__nav-primary">
+		<ul>
+
+
+			<li id="nav-res" class="js-drop" data-menu="menu-res">
+				<a href="https://www.alcf.anl.gov/alcf-resources">ALCF Resources</a>
+
+				<div id="menu-res" class="dropdown js-dropdown-hidden">
+					<nav>
+						<div class="dropdown__intro">
+							<div class="dropdown__intro-subhead">
+								<h2>Leadership Computing Resources</h2>
+							</div>
+							<div class="dropdown__intro-description">
+								<p>
+									The ALCF provides users with access to supercomputing resources that are significantly more powerful than systems typically used for open scientific research.
+								</p>
+							</div>
+						</div>
+
+						<div class="dropdown__links-1">
+							<div class="dropdown__links-group">
+								<h3>Computing Resources</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/aurora">Aurora</a></li>
+									<li><a href="https://www.alcf.anl.gov/polaris">Polaris</a></li>
+									<li><a href="https://www.alcf.anl.gov/alcf-resources/theta">Theta and ThetaGPU</a></li>
+									<li><a href="https://www.alcf.anl.gov/alcf-ai-testbed">ALCF AI Testbed</a></li>
+									<li><a href="https://www.alcf.anl.gov/alcf-resources/cooley">Cooley</a></li>
+									<li><a href="https://www.alcf.anl.gov/alcf-resources/evaluation-testbeds">Evaluation Testbeds</a></li>
+									<li><a href="https://www.alcf.anl.gov/alcf-resources/storage-and-networking">Storage and Networking</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="dropdown__links-2">
+							<div class="dropdown__links-group">
+								<h3>Facility Expertise</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/alcf-resources/facility-expertise">Facility Expertise</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="dropdown__featured">
+							<a href="https://alcf.anl.gov/aurora">
+								<div class="dropdown__featured-title">
+									<h3>
+										Featured: Aurora
+									</h3>
+								</div>
+
+								<div class="dropdown__featured-image">
+									<div class="img-wrapper">
+										<img src="/ai-testbed-userdocs
+/images/aurora.png" />
+									</div>
+								</div>
+							</a>
+						</div>
+
+					</nav>
+				</div>
+			</li>
+
+
+			<li id="nav-sci" class="js-drop" data-menu="menu-sci">
+				<a href="https://www.alcf.anl.gov/science">Science</a>
+
+				<div id="menu-sci" class="dropdown js-dropdown-hidden">
+					<nav>
+						<div class="dropdown__intro">
+							<div class="dropdown__intro-subhead">
+								<h2>Computational Science</h2>
+							</div>
+							<div class="dropdown__intro-description">
+								<p>
+									The ALCF is accelerating scientific discoveries in many disciplines, ranging from chemistry and engineering to physics and materials science.
+								</p>
+							</div>
+						</div>
+
+						<div class="dropdown__links-1">
+							<div class="dropdown__links-group">
+								<h3>Output</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/science/projects">Projects</a></li>
+									<li><a href="https://www.alcf.anl.gov/science/publications">Publications</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="dropdown__links-2">
+							<div class="dropdown__links-group">
+								<h3>Allocation Programs</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/science/incite-allocation-program">INCITE Program</a></li>
+									<li><a href="https://www.alcf.anl.gov/science/alcc-allocation-program">ALCC</a></li>
+									<li><a href="https://www.alcf.anl.gov/science/adsp-allocation-program">ADSP Program</a></li>
+									<li><a href="https://www.alcf.anl.gov/science/directors-discretionary-allocation-program">Director’s Discretionary</a></li>
+									<li><a href="https://www.alcf.anl.gov/science/early-science-program">Early Science Program</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="dropdown__featured">
+							<a href="https://www.alcf.anl.gov/science/projects/Engineering">
+								<div class="dropdown__featured-title">
+									<h3>
+										Featured: Engineering
+									</h3>
+								</div>
+
+								<div class="dropdown__featured-image">
+									<div class="img-wrapper">
+										<img src="/ai-testbed-userdocs/images/engineering.png" />
+									</div>
+								</div>
+							</a>
+						</div>
+
+					</nav>
+				</div>
+			</li>
+
+
+			<li id="nav-cp" class="js-drop" data-menu="menu-cp">
+				<a href="#https://www.alcf.anl.gov/community-and-partnerships">Community and Partnerships</a>
+
+				<div id="menu-cp" class="dropdown js-dropdown-hidden">
+					<nav>
+						<div class="dropdown__intro">
+							<div class="dropdown__intro-subhead">
+								<h2>Growing the HPC Community</h2>
+							</div>
+							<div class="dropdown__intro-description">
+								<p>
+									The ALCF is committed to providing training and outreach opportunities that prepare researchers to efficiently use its leadership computing systems, while also cultivating a diverse and skilled HPC workforce for the future.
+								</p>
+							</div>
+						</div>
+
+						<div class="dropdown__links-1">
+							<div class="dropdown__links-group">
+								<h3>Partnerships</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/community-and-partnerships/industry">Industry</a></li>
+									<li><a href="https://www.alcf.anl.gov/community-and-partnerships/partners">Partners</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="dropdown__links-2">
+							<div class="dropdown__links-group">
+								<h3>Educational Outreach</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/community-and-partnerships/women-in-stem">Women in STEM</a></li>
+									<li><a href="https://www.alcf.anl.gov/community-and-partnerships/student-outreach">Student Outreach</a></li>
+									<li><a href="https://www.alcf.anl.gov/community-and-partnerships/training-researchers">Training Researchers</a></li>
+								</ul>
+							</div>
+						</div>
+
+					</nav>
+				</div>
+			</li>
+
+
+			<li id="nav-abt" class="js-drop" data-menu="menu-abt">
+				<a href="https://www.alcf.anl.gov/about">About</a>
+
+				<div id="menu-abt" class="dropdown js-dropdown-hidden">
+					<nav>
+						<div class="dropdown__intro">
+							<div class="dropdown__intro-subhead">
+								<h2>Accelerating Science</h2>
+							</div>
+							<div class="dropdown__intro-description">
+								<p>
+									The Argonne Leadership Computing Facility enables breakthroughs in science and engineering by providing supercomputing resources and expertise to the research community.
+								</p>
+							</div>
+						</div>
+
+						<div class="dropdown__links-1">
+							<div class="dropdown__links-group">
+								<h3>Get to Know More</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/about/alcf-leadership-team">Leadership</a></li>
+									<li><a href="https://www.alcf.anl.gov/about/people">People</a></li>
+									<li><a href="https://www.alcf.anl.gov/alcf-organizational-chart">Organizational Chart</a></li>
+									<li><a href="https://www.alcf.anl.gov/about/user-advisory-council">User Advisory Council</a></li>
+									<li><a href="https://www.alcf.anl.gov/about/history">History</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="dropdown__links-2">
+							<div class="dropdown__links-group">
+								<h3>Visit</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/about/visiting-alcf">Visiting ALCF</a></li>
+									<li><a href="https://www.alcf.anl.gov/about/tours">Tours</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="dropdown__links-21">
+							<div class="dropdown__links-group">
+								<h3>Latest</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/news">News</a></li>
+									<li><a href="https://www.alcf.anl.gov/about/careers">Careers</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="dropdown__links-22">
+							<div class="dropdown__links-group">
+								<h3>Press Kits</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/alcf-media-kit">ALCF Media Kit</a></li>
+									<li><a href="https://www.alcf.anl.gov/aurora-media-kit">Aurora Media Kit</a></li>
+									<li><a href="https://www.alcf.anl.gov/report-archive">Reports Archive</a></li>
+								</ul>
+							</div>
+						</div>
+
+					</nav>
+				</div>
+			</li>
+
+
+			<li id="nav-sup" class="js-drop" data-menu="menu-sup">
+				<a href="https://www.alcf.anl.gov/support-center">Support Center</a>
+
+				<div id="menu-sup" class="dropdown js-dropdown-hidden">
+					<nav>
+						<div class="dropdown__intro">
+							<div class="dropdown__intro-subhead">
+								<h2>Support Center</h2>
+							</div>
+							<div class="dropdown__intro-description">
+								<p>
+									The ALCF Support Center assists users with support requests related to their ALCF projects.
+								</p>
+							</div>
+						</div>
+
+						<div class="dropdown__links-1">
+							<div class="dropdown__links-group">
+								<h3>Current</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/support-center/machine-status">Machine Status</a></li>
+									<li><a href="https://www.alcf.anl.gov/support-center/facility-updates">Facility Updates</a></li>
+									<li><a href="https://accounts.alcf.anl.gov/home">Accounts Website</a></li>
+								</ul>
+
+								<br>
+
+								<h3>Training</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/support-center/training-assets">Training Videos & Slides</a></li>
+									<li><a href="https://www.alcf.anl.gov/support-center/training-overview">Training Overview</a></li>
+									<li><a href="https://www.alcf.anl.gov/events">Training and Events</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="dropdown__links-2">
+							<div class="dropdown__links-group">
+								<h3>Guides</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/support-center/get-started">Get Started</a></li>
+									<li><a href="https://www.alcf.anl.gov/support-center/account-and-project-management">Account and Project Management</a></li>
+									<li><a href="https://www.alcf.anl.gov/support-center/theta-and-thetagpu">Theta and ThetaGPU</a></li>
+									<li><a href="https://www.alcf.anl.gov/support-center/ai-testbed">AI Testbed</a></li>
+									<li><a href="https://www.alcf.anl.gov/support-center/cooley">Cooley</a></li>
+									<li><a href="https://www.alcf.anl.gov/support-center/aurora">Aurora</a></li>
+									<li><a href="https://www.alcf.anl.gov/support-center/facility-policies">Facility Policies</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="dropdown__featured">
+							<a href="https://www.alcf.anl.gov/support-center/get-started">
+								<div class="dropdown__featured-title">
+									<h3>
+										Featured: Get Started
+									</h3>
+								</div>
+
+								<div class="dropdown__featured-image">
+									<div class="img-wrapper">
+										<img src="/ai-testbed-userdocs/images/getstarted.png" />
+									</div>
+								</div>
+							</a>
+						</div>
+
+					</nav>
+				</div>
+			</li>
+
+
+		</ul>
+	</nav>
+
+	<nav class="header__nav-secondary">
+		<!-- wrapper needed to hang right -->
+		<div class="header__nav-secondary--right"> 
+			<ul>
+				<li><a href="https://www.alcf.anl.gov/news"> News </a></li>
+				<li><a href="https://www.alcf.anl.gov/events"> Events </a></li>
+				<li><a href="https://www.alcf.anl.gov/about/people"> People </a></li>
+				<li><a href="https://www.alcf.anl.gov/about/careers"> Careers </a></li>
+			</ul>
+
+			
+			  <label class="md-header__button md-icon" for="__search">
+			    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+			  </label>
+
+			  <!-- Search interface -->
+			  <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+			
+
+		</div>
+	</nav>
+
+</div>
+</div> <!-- end header--primary -->
+
+
+
+
+
+
+
+
+
+<!-- Mobile Header -->
+<!-- --------------------------------------------------------------------- -->
+
+<div class="header--mobile">
+
+	<div class="grid">
+
+		<div class="header__site-title">
+			<h1>Argonne Leadership<br>Computing Facility</h1>		
+		</div>
+
+
+		<div class="header__mobIcons">
+			<div id="js-mobileOpen" class="header__menu-toggle">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"></path></svg>		
+			</div>
+
+			
+			  <label class="md-header__button md-icon" for="__search">
+			    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+			  </label>
+
+			  <!-- Search interface -->
+			  <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+			
+		</div>
+
+	</div>
+
+
+	<div id="js-mobileMenu" class="header__dropdownBG menu--closed">
+
+	<div class="grid">
+
+		<div class="header__site-title">
+			<h1>Argonne Leadership<br>Computing Facility</h1>		
+		</div>
+
+		<div id="js-mobileClose" class="header__mobIcons">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg>		
+		</div>
+
+	</div>
+
+
+	<div class="grid">
+
+		<nav class="header__nav-primary">
+
+			<ul>
+
+				<li>
+					<a href="#" class="drawer-head"data-mobmenu="mobmenu-res">ALCF Resources <span class="drawer-arrow">&#9660;</span></a>
+
+					<div id="mobmenu-res" class="dropdown menu--closed">
+
+						<div class="dropdown__links-1">
+							<div class="dropdown__links-group">
+								<h3>Computing Resources</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/aurora">Aurora</a></li>
+									<li><a href="https://www.alcf.anl.gov/polaris">Polaris</a></li>
+									<li><a href="https://www.alcf.anl.gov/alcf-resources/theta">Theta and ThetaGPU</a></li>
+									<li><a href="https://www.alcf.anl.gov/alcf-ai-testbed">ALCF AI Testbed</a></li>
+									<li><a href="https://www.alcf.anl.gov/alcf-resources/cooley">Cooley</a></li>
+									<li><a href="https://www.alcf.anl.gov/alcf-resources/evaluation-testbeds">Evaluation Testbeds</a></li>
+									<li><a href="https://www.alcf.anl.gov/alcf-resources/storage-and-networking">Storage and Networking</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="dropdown__links-2">
+							<div class="dropdown__links-group">
+								<h3>Facility Expertise</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/alcf-resources/facility-expertise">Facility Expertise</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</li>
+
+
+				<li>
+					<a href="#" class="drawer-head" data-mobmenu="mobmenu-sci">Science <span class="drawer-arrow">&#9660;</span></a>
+
+					<div id="mobmenu-sci" class="dropdown menu--closed">
+						<div class="dropdown__links-1">
+							<div class="dropdown__links-group">
+								<h3>Output</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/science/projects">Projects</a></li>
+									<li><a href="https://www.alcf.anl.gov/science/publications">Publications</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="dropdown__links-2">
+							<div class="dropdown__links-group">
+								<h3>Allocation Programs</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/science/incite-allocation-program">INCITE Program</a></li>
+									<li><a href="https://www.alcf.anl.gov/science/alcc-allocation-program">ALCC</a></li>
+									<li><a href="https://www.alcf.anl.gov/science/adsp-allocation-program">ADSP Program</a></li>
+									<li><a href="https://www.alcf.anl.gov/science/directors-discretionary-allocation-program">Director’s Discretionary</a></li>
+									<li><a href="https://www.alcf.anl.gov/science/early-science-program">Early Science Program</a></li>
+								</ul>
+							</div>
+						</div>
+				</div>
+
+				</li>
+
+
+				<li>
+					<a href="#" class="drawer-head" data-mobmenu="mobmenu-cp">Community and Partnerships <span class="drawer-arrow">&#9660;</span></a>
+
+					<div id="mobmenu-cp" class="dropdown menu--closed">
+						<div class="dropdown__links-1">
+							<div class="dropdown__links-group">
+								<h3>Partnerships</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/community-and-partnerships/industry">Industry</a></li>
+									<li><a href="https://www.alcf.anl.gov/community-and-partnerships/partners">Partners</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="dropdown__links-2">
+							<div class="dropdown__links-group">
+								<h3>Educational Outreach</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/community-and-partnerships/women-in-stem">Women in STEM</a></li>
+									<li><a href="https://www.alcf.anl.gov/community-and-partnerships/student-outreach">Student Outreach</a></li>
+									<li><a href="https://www.alcf.anl.gov/community-and-partnerships/training-researchers">Training Researchers</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</li>
+
+
+				<li>
+					<a href="#" class="drawer-head" data-mobmenu="mobmenu-abt">About <span class="drawer-arrow">&#9660;</span></a>
+
+					<div id="mobmenu-abt" class="dropdown menu--closed">
+						<div class="dropdown__links-1">
+							<div class="dropdown__links-group">
+								<h3>Get to Know More</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/about/alcf-leadership-team">Leadership</a></li>
+									<li><a href="https://www.alcf.anl.gov/about/people">People</a></li>
+									<li><a href="https://www.alcf.anl.gov/alcf-organizational-chart">Organizational Chart</a></li>
+									<li><a href="https://www.alcf.anl.gov/about/user-advisory-council">User Advisory Council</a></li>
+									<li><a href="https://www.alcf.anl.gov/about/history">History</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="dropdown__links-2">
+							<div class="dropdown__links-group">
+								<h3>Visit</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/about/visiting-alcf">Visiting ALCF</a></li>
+									<li><a href="https://www.alcf.anl.gov/about/tours">Tours</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="dropdown__links-21">
+							<div class="dropdown__links-group">
+								<h3>Latest</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/news">News</a></li>
+									<li><a href="https://www.alcf.anl.gov/about/careers">Careers</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="dropdown__links-22">
+							<div class="dropdown__links-group">
+								<h3>Press Kits</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/alcf-media-kit">ALCF Media Kit</a></li>
+									<li><a href="https://www.alcf.anl.gov/aurora-media-kit">Aurora Media Kit</a></li>
+									<li><a href="https://www.alcf.anl.gov/report-archive">Reports Archive</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</li>
+
+
+				<li>
+					<a href="#" class="drawer-head" data-mobmenu="mobmenu-sup">Support Center <span class="drawer-arrow">&#9660;</span></a>
+
+					<div id="mobmenu-sup" class="dropdown menu--closed">
+						<div class="dropdown__links-1">
+							<div class="dropdown__links-group">
+								<h3>Current</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/support-center/machine-status">Machine Status</a></li>
+									<li><a href="https://www.alcf.anl.gov/support-center/facility-updates">Facility Updates</a></li>
+									<li><a href="https://accounts.alcf.anl.gov/home">Accounts Website</a></li>
+								</ul>
+								<br>
+								<h3>Training</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/support-center/training-assets">Training Videos & Slides</a></li>
+									<li><a href="https://www.alcf.anl.gov/support-center/training-overview">Training Overview</a></li>
+									<li><a href="https://www.alcf.anl.gov/events">Training and Events</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="dropdown__links-2">
+							<div class="dropdown__links-group">
+								<h3>Guides</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/support-center/get-started">Get Started</a></li>
+									<li><a href="https://www.alcf.anl.gov/support-center/account-and-project-management">Account and Project Management</a></li>
+									<li><a href="https://www.alcf.anl.gov/support-center/theta-and-thetagpu">Theta and ThetaGPU</a></li>
+									<li><a href="https://www.alcf.anl.gov/support-center/cooley">Cooley</a></li>
+									<li><a href="https://www.alcf.anl.gov/support-center/aurora">Aurora</a></li>
+									<li><a href="https://www.alcf.anl.gov/support-center/facility-policies">Facility Policies</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</li>
+
+
+			</ul>
+		</nav>
+
+
+
+
+
+	  <nav class="header__nav-secondary">
+			<!-- wrapper needed to hang right -->
+			<!-- <div class="header__nav-secondary--right">  -->
+				<div class="dropdown__links-1">
+					<ul>
+						<li><a href="https://www.alcf.anl.gov/news"> News </a></li>
+						<li><a href="https://www.alcf.anl.gov/events"> Events </a></li>
+					</ul>
+				</div>
+				<div class="dropdown__links-2">
+					<ul>
+						<li><a href="https://www.alcf.anl.gov/about/people"> People </a></li>
+						<li><a href="https://www.alcf.anl.gov/about/careers"> Careers </a></li>
+					</ul>
+				</div>
+			<!-- </div> -->
+		</nav>
+
+
+
+	</div> <!-- end dropdown grid -->
+	</div> <!-- end dropdown background -->
+
+
+</div> <!-- end mobile header -->
+
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="ALCF User Guide" class="md-nav__button md-logo" aria-label="ALCF User Guide" data-md-component="logo">
+      
+  <img src="../../../images/Argonne_wireframe_white_transparent.png" alt="logo">
+
+    </a>
+    ALCF User Guide
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/argonne-lcf/polaris-userdocs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    argonne-lcf/alcf-userguide
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Polaris
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Polaris" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Polaris
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/" class="md-nav__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../known-issues/" class="md-nav__link">
+        Known Issues
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_3">
+          Hardware Overview
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Hardware Overview" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Hardware Overview
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware-overview/machine-overview/" class="md-nav__link">
+        Polaris Machine Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware-overview/slingshot-network/" class="md-nav__link">
+        Slingshot Network
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_4">
+          Compiling and Linking
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Compiling and Linking" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          Compiling and Linking
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../compiling-and-linking/compiling-and-linking-overview/" class="md-nav__link">
+        Compiling and Linking Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../compiling-and-linking/polaris-programming-models/" class="md-nav__link">
+        Programming Models
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../compiling-and-linking/polaris-example-program-makefile/" class="md-nav__link">
+        Example Program and Makefile
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../compiling-and-linking/cce-compilers-polaris/" class="md-nav__link">
+        CCE Compilers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../compiling-and-linking/gnu-compilers-polaris/" class="md-nav__link">
+        GNU Compilers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../compiling-and-linking/nvidia-compiler-polaris/" class="md-nav__link">
+        NVIDIA Compilers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../compiling-and-linking/llvm-compilers-polaris/" class="md-nav__link">
+        LLVM Compilers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../compiling-and-linking/continuous-integration-polaris/" class="md-nav__link">
+        Continuous Integration
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5" type="checkbox" id="__nav_2_5" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_5">
+          Queueing and Running Jobs on Polaris
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Queueing and Running Jobs on Polaris" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_5">
+          <span class="md-nav__icon md-icon"></span>
+          Queueing and Running Jobs on Polaris
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Job Scheduling and Execution
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Job Scheduling and Execution
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#documentation-tools" class="md-nav__link">
+    Documentation / Tools
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#obtaining-and-managing-compute-resources-at-alcf" class="md-nav__link">
+    Obtaining and managing compute resources at ALCF
+  </a>
+  
+    <nav class="md-nav" aria-label="Obtaining and managing compute resources at ALCF">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definitions-and-notes" class="md-nav__link">
+    Definitions and notes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-basics" class="md-nav__link">
+    The basics
+  </a>
+  
+    <nav class="md-nav" aria-label="The basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#qsub-submit-a-job-to-run" class="md-nav__link">
+    qsub - submit a job to run
+  </a>
+  
+    <nav class="md-nav" aria-label="qsub - submit a job to run">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resource-selection-and-job-placement" class="md-nav__link">
+    Resource Selection and Job Placement
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qsub-examples-we-need-more-examples" class="md-nav__link">
+    qsub examples - WE NEED MORE EXAMPLES
+  </a>
+  
+    <nav class="md-nav" aria-label="qsub examples - WE NEED MORE EXAMPLES">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#qstat-query-jobqueue-status" class="md-nav__link">
+    qstat - Query Job/Queue Status
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qalter-alter-a-job-submission" class="md-nav__link">
+    qalter - Alter a job submission
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qdel-delete-a-job" class="md-nav__link">
+    qdel - Delete a job:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qmove-move-a-job-to-a-different-queue" class="md-nav__link">
+    qmove - Move a job to a different queue
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qhold-qrls-place-release-a-user-hold-on-a-job" class="md-nav__link">
+    qhold, qrls - Place / release a user hold on a job
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qselect-query-jobids-for-use-in-commands" class="md-nav__link">
+    qselect - Query jobids for use in commands
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qmsg-write-a-message-string-into-one-or-more-output-files-of-the-job" class="md-nav__link">
+    qmsg Write a message string into one or more output files of the job
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qsig-send-a-signal-to-a-job" class="md-nav__link">
+    qsig Send a signal to a job
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tracejob-get-log-information-about-your-job" class="md-nav__link">
+    tracejob Get log information about your job
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-information-about-the-state-of-the-resources" class="md-nav__link">
+    Getting information about the state of the resources
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting information about the state of the resources">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#qstat-get-information-about-the-server-or-queues" class="md-nav__link">
+    qstat Get information about the server or queues
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pbsnodes-get-information-about-the-current-state-of-nodes" class="md-nav__link">
+    pbsnodes Get information about the current state of nodes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#polaris-specific-stuff" class="md-nav__link">
+    Polaris specific stuff
+  </a>
+  
+    <nav class="md-nav" aria-label="Polaris specific stuff">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#polaris-rack-and-dragonfly-group-mappings" class="md-nav__link">
+    Polaris Rack and Dragonfly group mappings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-gpu-enabled-applications" class="md-nav__link">
+    Running GPU-enabled Applications
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#binding-mpi-ranks-to-gpus" class="md-nav__link">
+    Binding MPI ranks to GPUs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#need-help-from-applications-people-for-this-section" class="md-nav__link">
+    Need help from applications people for this section
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pbs-qsub-options-table/" class="md-nav__link">
+        Cobalt to PBS option Comparison
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gronkulator/" class="md-nav__link">
+        The Grounkulator (Job Status Display)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pbs-admin-quick-start-guide/" class="md-nav__link">
+        PBS Admin Quick Start Guide
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6" type="checkbox" id="__nav_2_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_6">
+          Data Management
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Data Management" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_6">
+          <span class="md-nav__icon md-icon"></span>
+          Data Management
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-management/acdc/acdc-overview/" class="md-nav__link">
+        ALCF Community Data Co-Op
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-management/acdc/eagle-data-sharing/" class="md-nav__link">
+        Sharing on Eagle
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6_3" type="checkbox" id="__nav_2_6_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_6_3">
+          Data Transfer
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Data Transfer" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_6_3">
+          <span class="md-nav__icon md-icon"></span>
+          Data Transfer
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-management/data-transfer/sftp-scp/" class="md-nav__link">
+        SFTP and SCP
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-management/data-transfer/using-globus/" class="md-nav__link">
+        Using Globus
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6_4" type="checkbox" id="__nav_2_6_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_6_4">
+          File System & Storage
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="File System & Storage" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_6_4">
+          <span class="md-nav__icon md-icon"></span>
+          File System & Storage
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-management/filesystem-and-storage/polaris-disk-quota/" class="md-nav__link">
+        Polaris Disk Quota
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_7" type="checkbox" id="__nav_2_7" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_7">
+          Applications and Libraries
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Applications and Libraries" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_7">
+          <span class="md-nav__icon md-icon"></span>
+          Applications and Libraries
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_7_1" type="checkbox" id="__nav_2_7_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_7_1">
+          Applications
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Applications" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_7_1">
+          <span class="md-nav__icon md-icon"></span>
+          Applications
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../applications-and-libraries/applications/lammps/" class="md-nav__link">
+        LAMMPS
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_7_2" type="checkbox" id="__nav_2_7_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_7_2">
+          Libraries
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Libraries" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_7_2">
+          <span class="md-nav__icon md-icon"></span>
+          Libraries
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../applications-and-libraries/libraries/math-libraries/" class="md-nav__link">
+        Math Libraries
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_8" type="checkbox" id="__nav_2_8" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_8">
+          Data Science Workflows
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Data Science Workflows" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_8">
+          <span class="md-nav__icon md-icon"></span>
+          Data Science Workflows
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-science-workflows/containers/containers/" class="md-nav__link">
+        Containers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-science-workflows/balsam/" class="md-nav__link">
+        Balsam
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_9" type="checkbox" id="__nav_2_9" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_9">
+          Programming Models
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Programming Models" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_9">
+          <span class="md-nav__icon md-icon"></span>
+          Programming Models
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programming-models/openmp-polaris/" class="md-nav__link">
+        OpenMP
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programming-models/sycl-polaris/" class="md-nav__link">
+        SYCL
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_10" type="checkbox" id="__nav_2_10" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_10">
+          Debugging Tools
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Debugging Tools" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_10">
+          <span class="md-nav__icon md-icon"></span>
+          Debugging Tools
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../debugging-tools/debugging-overview/" class="md-nav__link">
+        Debugging Tools Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../debugging-tools/CUDA-GDB/" class="md-nav__link">
+        CUDA-GDB
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_11" type="checkbox" id="__nav_2_11" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_11">
+          Performance Tools
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Performance Tools" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_11">
+          <span class="md-nav__icon md-icon"></span>
+          Performance Tools
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../performance-tools/performance-overview/" class="md-nav__link">
+        Performance Tools Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../performance-tools/NVIDIA-Nsight/" class="md-nav__link">
+        NVIDIA-Nsight
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Edith (Edge Dev Testbed)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Edith (Edge Dev Testbed)" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Edith (Edge Dev Testbed)
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../edtb/" class="md-nav__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#documentation-tools" class="md-nav__link">
+    Documentation / Tools
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#obtaining-and-managing-compute-resources-at-alcf" class="md-nav__link">
+    Obtaining and managing compute resources at ALCF
+  </a>
+  
+    <nav class="md-nav" aria-label="Obtaining and managing compute resources at ALCF">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definitions-and-notes" class="md-nav__link">
+    Definitions and notes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-basics" class="md-nav__link">
+    The basics
+  </a>
+  
+    <nav class="md-nav" aria-label="The basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#qsub-submit-a-job-to-run" class="md-nav__link">
+    qsub - submit a job to run
+  </a>
+  
+    <nav class="md-nav" aria-label="qsub - submit a job to run">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resource-selection-and-job-placement" class="md-nav__link">
+    Resource Selection and Job Placement
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qsub-examples-we-need-more-examples" class="md-nav__link">
+    qsub examples - WE NEED MORE EXAMPLES
+  </a>
+  
+    <nav class="md-nav" aria-label="qsub examples - WE NEED MORE EXAMPLES">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#qstat-query-jobqueue-status" class="md-nav__link">
+    qstat - Query Job/Queue Status
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qalter-alter-a-job-submission" class="md-nav__link">
+    qalter - Alter a job submission
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qdel-delete-a-job" class="md-nav__link">
+    qdel - Delete a job:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qmove-move-a-job-to-a-different-queue" class="md-nav__link">
+    qmove - Move a job to a different queue
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qhold-qrls-place-release-a-user-hold-on-a-job" class="md-nav__link">
+    qhold, qrls - Place / release a user hold on a job
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qselect-query-jobids-for-use-in-commands" class="md-nav__link">
+    qselect - Query jobids for use in commands
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qmsg-write-a-message-string-into-one-or-more-output-files-of-the-job" class="md-nav__link">
+    qmsg Write a message string into one or more output files of the job
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qsig-send-a-signal-to-a-job" class="md-nav__link">
+    qsig Send a signal to a job
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tracejob-get-log-information-about-your-job" class="md-nav__link">
+    tracejob Get log information about your job
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-information-about-the-state-of-the-resources" class="md-nav__link">
+    Getting information about the state of the resources
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting information about the state of the resources">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#qstat-get-information-about-the-server-or-queues" class="md-nav__link">
+    qstat Get information about the server or queues
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pbsnodes-get-information-about-the-current-state-of-nodes" class="md-nav__link">
+    pbsnodes Get information about the current state of nodes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#polaris-specific-stuff" class="md-nav__link">
+    Polaris specific stuff
+  </a>
+  
+    <nav class="md-nav" aria-label="Polaris specific stuff">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#polaris-rack-and-dragonfly-group-mappings" class="md-nav__link">
+    Polaris Rack and Dragonfly group mappings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-gpu-enabled-applications" class="md-nav__link">
+    Running GPU-enabled Applications
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#binding-mpi-ranks-to-gpus" class="md-nav__link">
+    Binding MPI ranks to GPUs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#need-help-from-applications-people-for-this-section" class="md-nav__link">
+    Need help from applications people for this section
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+  <a href="https://github.com/argonne-lcf/polaris-userdocs/edit/master/docs/polaris/queueing-and-running-jobs/job-and-queue-scheduling.md" title="Edit this page" class="md-content__button md-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+
+  <h1>Job Scheduling and Execution</h1>
+
+<h2 id="documentation-tools">Documentation / Tools</h2>
+<ul>
+<li><a href="https://anl.box.com/s/rj7ac90tv6wxeu20lvfqf5j0cga76owc">The PBS "BigBook"</a> - This is really excellent.  I highly suggest you download it and search through it when you have questions.  Can be found at the link above or online.</li>
+<li><a href="https://anl.box.com/s/qdxqrprgiejcuz2m0cmcmde1mobhj81v">Cobalt qsub options to PBS qsub options</a> - shows how to map cobalt command line options to PBS command line options.  Can be found at the link above.</li>
+<li><code>qsub2pbs</code>  - Installed on Theta and Cooley.  Pass it a Cobalt command line and it will convert it to a PBS command line.  Add the --directives option and it will output an executable script.  Note that it outputs -l select=system=None.  You would need to change the None to whatever system you wanted to target (polaris, aurora, etc).</li>
+</ul>
+<h2 id="introduction">Introduction</h2>
+<p>At a high level, getting computational tasks run on systems at ALCF  is a two step process:</p>
+<ol>
+<li>You request and get allocated resources (compute nodes) on one or more of the systems.  This is accomplished by interacting with the job scheduler / workload manager.  In the ALCF we use PBS Professional.</li>
+<li>You execute your tasks on those resources.  This is accomplished in your job script by interacting with various system services (MPI, OpenMP, the HPE PALS job launch system, etc.)</li>
+</ol>
+<p>Our documentation is organized in two sections aligned with the two steps described above.</p>
+<h2 id="obtaining-and-managing-compute-resources-at-alcf">Obtaining and managing compute resources at ALCF</h2>
+<h3 id="definitions-and-notes">Definitions and notes</h3>
+<p><code>chunk</code>: <em>A set of resources allocated as a unit to a job. Specified inside a selection directive. All parts of a chunk come from the same host.  In a typical MPI (Message-Passing Interface) job, there is one chunk per MPI process.</em></p>
+<p><code>vnode</code>: <em>A virtual node, or vnode, is an abstract object representing a host or a set of resources which form a usable part of an execution host. This could be an entire host,
+or a nodeboard or a blade. A single host can be made up of multiple vnodes. Each vnode can be managed and scheduled independently. Each vnode in a complex must have a unique name. Vnodes on a host can share resources, such as node-locked licenses.</em>  PBS operates on vnodes.  A vnode can, and in ALCF often will, represent an entire host, but it doesn't have to.  For instance, there is a mode on Polaris where we could have each physical host look like four vnodes, each with 16 threads, 1/4 of the RAM and one A100.</p>
+<p><code>ncpus</code>: In ALCF, given the way we configure PBS, this equates to a hardware thread.  For example, Polaris has a single socket with a 32 core CPU, each with two threads, so PBS reports that as ncpus=64.</p>
+<p><code>ngpus</code>: The number of GPUs.  On Polaris, this will generally be four.  However, if we enable <em>Multi Instance GPU (MIG)</em> mode and use cgroups it could be as high as 28.</p>
+<h3 id="the-basics">The basics</h3>
+<p>If you are an existing ALCF user and are familiar with Cobalt, you will find the PBS commands very similar though the options to qsub are quite different.  Here are the "Big Four" commands you will use:</p>
+<ol>
+<li><code>qsub</code> - request resources (compute nodes) to run your job and start your script/executable on the head node.</li>
+<li><code>qstat</code> - check on the status of your request</li>
+<li><code>qalter</code> - update your request for resources</li>
+<li><code>qdel</code> - cancel an uneeded request for resources</li>
+</ol>
+<h4 id="qsub-submit-a-job-to-run"><code>qsub</code> - submit a job to run</h4>
+<ul>
+<li>Users Guide, Section 2, page UG-11 and Reference Guide Sec 2.59, page RG-214</li>
+</ul>
+<p>The single biggest difference between Cobalt and PBS is the way you select resources when submitting a job.  In Cobalt, every system had its own Cobalt server and you just specified the number of nodes you wanted (-n).  With PBS, we are planning on running a single "PBS Complex" which means there will be a single PBS server for all systems in the ALCF and you need to specify enough constraints to get your job to run on the resources you want/need.  One advantage of this is that getting resources from two different systems or "co-scheduling" is trivially possible.</p>
+<h5 id="resource-selection-and-job-placement">Resource Selection and Job Placement</h5>
+<p>Section 2.59.2.6 RG-217 Requesting Resources and Placing jobs</p>
+<p>Resources come in two flavors:</p>
+<ul>
+<li>Job Wide: Walltime is the most common example of a job wide resource.  You use the <code>-l</code> option to specify job wide resources, i.e. <code>-l walltime=06:00:00</code>.  All the resources in the job have the same walltime.</li>
+<li><code>-l &lt;resource name&gt;=&lt;value&gt;[,&lt;resource name&gt;=&lt;value&gt; ...]</code></li>
+<li>Chunks: (see the definition above) This is how you describe what your needs are to run your job.  You do this with the <code>-l select=</code> syntax.  In the ALCF, every node has a resource called <code>system</code> which is set to the system name it belongs to (Polaris, Aurora, etc).  This means you can typically get away with the very simple <code>-l select=128:system=polaris</code> which will give you 128 complete nodes on Polaris.  </li>
+<li><code>-l select=[&lt;N&gt;:]&lt;chunk&gt;[+[&lt;N&gt;:]&lt;chunk&gt; ...]</code> where N specifies how many of that chunk and a chunk is of the form:</li>
+<li><code>&lt;resource name&gt;=&lt;value&gt;[:&lt;resource name&gt;=&lt;value&gt; ...]</code></li>
+<li>Here is an example that would select resources from a machine like Polaris (A100s) and a hypothetical vis machine with A40 GPUs.  Note that PBS takes care of co-scheduling the nodes on the two systems for you transparently:<ul>
+<li><code>-l select=128:ncpus=64:ngpus=4:gputype=A100+32:ncpus=64:ngpus=2:gputype=A40</code> </li>
+</ul>
+</li>
+</ul>
+<p>You also have to tell PBS how you want the chunks distributed across the physical hardware.  You do that via the <code>-l place</code> option:</p>
+<ul>
+<li><code>-l place=[&lt;arrangement&gt;][: &lt;sharing&gt; ][: &lt;grouping&gt;]</code> where</li>
+<li>arrangement is one of <code>free | pack | scatter | vscatter</code><ul>
+<li>unless you have a specific reason to do otherwise, you probably want to set this to <code>scatter</code>, otherwise you may not get what you expect.  For instance on a host with ncpus=64, if you requested <code>-l select=8:ncpus=8</code> you could end up with all of our chunks on one node.</li>
+<li><code>free</code> means PBS can distribute them as it sees fit</li>
+<li><code>pack</code> means all chunks from one host.  Note that this is not the minimum number of hosts, it is one host.  If the chunks can't fit on one host, the qsub will fail.</li>
+<li><code>scatter</code> means take only one chunk from any given host.</li>
+<li><code>vscatter</code> means take only one chunk from any given vnode.  If a host has multiple vnodes, you could end up with more than one chunk on the host.</li>
+</ul>
+</li>
+<li>sharing is one of <code>excl | shared | exclhost</code> where<ul>
+<li>NOTE: Node configuration can override your requested sharing mode.  For instance, in most cases ALCF sets the nodes to <code>force_exclhost</code>, so normally you don't have to specify this.</li>
+<li><code>excl</code> means this job gets the entire vnode</li>
+<li><code>shared</code> means the vnode could be shared with another job from another user.</li>
+<li><code>exclhost</code> means this job gets the entire host, even if it has multiple vnodes.</li>
+</ul>
+</li>
+<li>group=<code>&lt;resource name&gt;</code><ul>
+<li>Below you will see the rack and dragonfly group mappings.  If you wanted to ensure that all the chunks came from dragonfly group 2, you could specify <code>group=g2</code>.  </li>
+</ul>
+</li>
+</ul>
+<p>There is an alternative to using the <code>group=</code> syntax.  The downside to <code>group=</code> is that you have to specify a specific dragonfly group, when what you may really want is for your chunks to all be in one dragonfly group, but you don't care which one.  On each node, we have defined two resources, one called <code>tier0</code> which is equal to the rack the node is in (each rack has a switch in it) and <code>tier1</code> which is equal to the dragonfly group it is in.  We have defined <em>placement sets</em> for the tier0 and tier1 resources.  If you use placement sets it will <em>preferentially</em> choose nodes from the specified resource, but it won't drain or delay your job start.</p>
+<p>Here is a heavily commented sample PBS submission script:</p>
+<div class="highlight"><pre><span></span><code>#!/bin/bash
+# UG Section 2.5, page UG-24 Job Submission Options
+# Add another # at the beginning of the line to comment out a line
+# NOTE: adding a switch to the command line will override values in this file.
+
+# These options are MANDATORY at ALCF; Your qsub will fail if you don&#39;t provide them.
+#PBS -A &lt;short project name&gt;
+#PBS -l walltime=HH:MM:SS
+
+# Highly recommended 
+# The first 15 characters of the job name are displayed in the qstat output:
+#PBS -N &lt;name&gt;
+
+# If you need a queue other than the default (uncomment to use)
+##PBS -q &lt;queue name&gt;
+
+# Controlling the output of your application
+# UG Sec 3.3 page UG-40 Managing Output and Error Files
+# By default, PBS spools your output on the compute node and then uses scp to move it the
+# destination directory after the job finishes.  Since we have globally mounted file systems
+# it is highly recommended that you use the -k option to write directly to the destination
+# the doe stands for direct, output, error
+#PBS -k doe
+#PBS -o &lt;path for stdout&gt;
+#PBS -e &lt;path for stderr&gt;
+
+# If you want to merge stdout and stderr, use the -j option
+# oe=merge stdout/stderr to stdout, eo=merge stderr/stdout to stderr, n=don&#39;t merge
+#PBS -j n
+
+# Controlling email notifications
+# UG Sec 2.5.1, page UG-25 Specifying Email Notification
+# When to send email b=job begin, e=job end, a=job abort, j=subjobs (job arrays), n=no mail
+#PBS -m be 
+# Be default, mail goes to the submitter, use this option to add others (uncomment to use)
+##PBS -M &lt;email addresses&gt;
+
+# Setting job dependencies
+# UG Section 6.2, page UG-107 Using Job Dependencies
+# There are many options for how to set up dependancies;  afterok will give behavior similar
+# to Cobalt (uncomment to use)
+##PBS depend=afterok:&lt;jobid&gt;:&lt;jobid&gt;
+
+# Environment variables (uncomment to use)
+# Section 6.12, page UG-126 Using Environment Variables
+# Sect 2.59.7, page RG-231 Enviornment variables PBS puts in the job environment
+##PBS -v &lt;variable list&gt;
+## -v a=10, &quot;var2=&#39;A,B&#39;&quot;, c=20, HOME=/home/zzz
+##PBS -V exports all the environment variables in your environnment to the compute node
+
+
+# The rest is an example of how an MPI job might be set up
+echo Working directory is $PBS_O_WORKDIR
+cd $PBS_O_WORKDIR
+
+echo Jobid: $PBS_JOBID
+echo Running on host `hostname`
+echo Running on nodes `cat $PBS_NODEFILE`
+
+NNODES=`wc -l &lt; $PBS_NODEFILE`
+NRANKS=1           # Number of MPI ranks per node
+NDEPTH=1           # Number of hardware threads per rank, spacing between MPI ranks on a node
+NTHREADS=1         # Number of OMP threads per rank, given to OMP_NUM_THREADS
+
+NTOTRANKS=$(( NNODES * NRANKS ))
+
+echo &quot;NUM_OF_NODES=${NNODES}  TOTAL_NUM_RANKS=${NTOTRANKS}  RANKS_PER_NODE=${NRANKS}  THREADS_PER_RANK=${NTHREADS}&quot;
+
+mpiexec --np ${NTOTRANKS} -ppn ${NRANKS} -d ${NDEPTH} -env OMP_NUM_THREADS=${NTHREADS} ./hello_mpi
+</code></pre></div>
+<h3 id="qsub-examples-we-need-more-examples">qsub examples - WE NEED MORE EXAMPLES</h3>
+<ul>
+<li><code>qsub -A my_allocation -l select=4:system=polaris -l walltime=30:00 -- a.out</code><ul>
+<li>run a.out on 4 chunks on polaris with a walltime of 30 minutes; charge my_allocation;</li>
+<li>Since we allocate full nodes on Polaris, 4 chunks will be 4 nodes.  If we shared nodes, that would be 4 cores.</li>
+<li>use the -- (dash dash) syntax when directly running an executable.</li>
+</ul>
+</li>
+<li><code>qsub -A my_allocation -l place=scatter -l select=32:ncpus=32 -q workq -l walltime=30:00 mpi_mm_64.sh</code><ul>
+<li>32 chunks on any system that meets the requirements; each chunk must have 32 HW threads; <code>place=scatter</code> means use a different vnode for each chunk, even if you could fit more than one on a vnode; use the queue named workq.</li>
+</ul>
+</li>
+</ul>
+<h4 id="qstat-query-jobqueue-status"><code>qstat</code> - Query Job/Queue Status</h4>
+<ul>
+<li>Users Guide Sec. 10.2, page UG-177; Reference Guide Sec. 2.57, page RG-198 </li>
+<li>NOTE: By default, the columns are fixed width and will truncate information.</li>
+<li>The most basic: <code>qstat</code> - will show all jobs queued and running in the system</li>
+<li>Only a specific users jobs: <code>qstat -u &lt;my username&gt;</code></li>
+<li>Detailed information about a specific job: <code>qstat -f &lt;jobid&gt; [&lt;jobid&gt; &lt;jobid&gt;...]</code><ul>
+<li>The comment field with the <code>-f</code> output can often tell you why your job isn't running or why it failed.</li>
+</ul>
+</li>
+<li>Display status of a queue: <code>qstat -Q &lt;queue name&gt;</code></li>
+<li>Display status of a completed job: <code>qstat -x &lt;jobid&gt; [&lt;jobid&gt; &lt;jobid&gt;...]</code><ul>
+<li>This has to be turned on (we have);  It is configured to keep 2 weeks of history.</li>
+</ul>
+</li>
+<li>Get estimated start time: <code>qstat -T &lt;jobid&gt;</code></li>
+<li>Make output parseable: <code>qstat -F [json | dsv]</code><ul>
+<li>That is <code>dsv</code> (delimeter) not <code>csv</code>;  The default delimiter is <code>|</code>, but -D can change it for instance <code>-D,</code> would use a comma instead.</li>
+</ul>
+</li>
+</ul>
+<h4 id="qalter-alter-a-job-submission"><code>qalter</code> - Alter a job submission</h4>
+<ul>
+<li>Users Guide Sec. 9.2, page UG-164; Reference Guide Sec. 2.42, page RG-128</li>
+<li>Basically takes the same options as <code>qsub</code>;  Say you typoed and set the walltime to 300 minutes instead of 30 minutes.  You could fix it (if the job had not started running) by doing <code>qalter -l walltime=30:00 &lt;jobid&gt; [&lt;jobid&gt; &lt;jobid&gt;...]</code> </li>
+<li>The new value overwrites any previous value.</li>
+</ul>
+<h4 id="qdel-delete-a-job"><code>qdel</code> - Delete a job:</h4>
+<ul>
+<li>Users Guide Sec. 9.3, page UG-166; Reference Guide Sec. 2.43, page RG-141</li>
+<li><code>qdel &lt;jobid&gt; [&lt;jobid&gt; &lt;jobid&gt;...]</code></li>
+</ul>
+<h4 id="qmove-move-a-job-to-a-different-queue"><code>qmove</code> - Move a job to a different queue</h4>
+<ul>
+<li>Users Guide Sec. 9.7, page UG-169; Reference Guide Sec. 2.48, page RG-173</li>
+<li><code>qmove &lt;new queue&gt; &lt;jobid&gt; [&lt;jobid&gt; &lt;jobid&gt;...]</code></li>
+<li>Only works before a job starts running</li>
+</ul>
+<h4 id="qhold-qrls-place-release-a-user-hold-on-a-job"><code>qhold, qrls</code> - Place / release a user hold on a job</h4>
+<ul>
+<li>Reference Guide Sec 2.46, page RG-148 and Sec 2.52, page RG-181</li>
+<li><code>[qhold | qrls] &lt;jobid&gt; [&lt;jobid&gt; &lt;jobid&gt;...]</code></li>
+</ul>
+<h4 id="qselect-query-jobids-for-use-in-commands"><code>qselect</code> - Query jobids for use in commands</h4>
+<ul>
+<li>Users Guide Sec. 10.1, page UG-171; Reference Guide Sec. 2.54, page RG-187</li>
+<li><code>qdel `qselect -N test1`</code> will delete all the jobs that had the job name set to <code>test1</code>.</li>
+</ul>
+<h4 id="qmsg-write-a-message-string-into-one-or-more-output-files-of-the-job"><code>qmsg</code> Write a message string into one or more output files of the job</h4>
+<ul>
+<li>Users Guide Sec. 9.4, page UG-167; Reference Guide Sec. 2.49, page RG-175</li>
+<li><code>qmsg -E -O "This is the message" &lt;jobid&gt; [&lt;jobid&gt; &lt;jobid&gt;...]</code></li>
+<li><code>-E</code> writes it to standard error, <code>-O</code> writes it to standard out</li>
+</ul>
+<h4 id="qsig-send-a-signal-to-a-job"><code>qsig</code> Send a signal to a job</h4>
+<ul>
+<li>Users Guide Sec. 9.5, page UG-168; Reference Guide Sec. 2.55, page RG-193</li>
+<li><code>qsig -s &lt;signal&gt; &lt;jobid&gt; [&lt;jobid&gt; &lt;jobid&gt;...]</code></li>
+<li>If you don't specify a signal, <code>SIGTERM</code> is sent.</li>
+</ul>
+<h4 id="tracejob-get-log-information-about-your-job"><code>tracejob</code> Get log information about your job</h4>
+<ul>
+<li>Reference Guide Sec 2.61, page RG-236</li>
+<li><code>tracejob &lt;jobid&gt;</code></li>
+</ul>
+<h2 id="getting-information-about-the-state-of-the-resources">Getting information about the state of the resources</h2>
+<h3 id="qstat-get-information-about-the-server-or-queues"><code>qstat</code> Get information about the server or queues</h3>
+<ul>
+<li>Users Guide Sec. 10.3 &amp; 10.4, page UG-184 - UG-187</li>
+<li><code>qstat -B[f]</code> - Check the server status</li>
+<li><code>qstat -Q[f] &lt;queue name&gt;</code> - Check the queue status </li>
+<li><strong>TODO:</strong> Add qmgr commands for checking queue and server status</li>
+</ul>
+<h3 id="pbsnodes-get-information-about-the-current-state-of-nodes"><code>pbsnodes</code> Get information about the current state of nodes</h3>
+<ul>
+<li>Reference Guide Sec 2.7 page RG-36</li>
+<li>This is more for admins, but it can tell you what nodes are free (state), how many "CPUs" which is actually the number of threads (ncpus), how many GPUs (ngpus) which with A100s can change depending on the MIG mode, and if the node is shared or not (sharing).</li>
+</ul>
+<p><code>pbsnodes -av</code> - Everything there is to know about a node</p>
+<p><div class="highlight"><pre><span></span><code>aps-edge-dev-04
+     Mom = aps-edge-dev-04.mcp.alcf.anl.gov
+     ntype = PBS
+     state = free
+     pcpus = 128
+     resources_available.arch = linux
+     resources_available.host = aps-edge-dev-04
+     resources_available.mem = 527831088kb
+     resources_available.ncpus = 128
+     resources_available.ngpus = 1
+     resources_available.vnode = aps-edge-dev-04
+     resources_assigned.accelerator_memory = 0kb
+     resources_assigned.hbmem = 0kb
+     resources_assigned.mem = 0kb
+     resources_assigned.naccelerators = 0
+     resources_assigned.ncpus = 0
+     resources_assigned.vmem = 0kb
+     resv_enable = True
+     sharing = force_exclhost
+     license = l
+     last_state_change_time = Tue Oct  5 21:58:57 2021
+</code></pre></div>
+<code>pbsnodes -avSj</code> - A nice table to see what is free and in use</p>
+<p><div class="highlight"><pre><span></span><code>(base) [allcock@edtb-01 20220214-22:53:26]&gt; pbsnodes -avSj
+                                                        mem       ncpus   nmics   ngpus
+vnode           state           njobs   run   susp      f/t        f/t     f/t     f/t   jobs
+--------------- --------------- ------ ----- ------ ------------ ------- ------- ------- -------
+edtb-01         free                 0     0      0      0 b/0 b     0/0     0/0     0/0 --
+edtb-02         free                 0     0      0      0 b/0 b     0/0     0/0     0/0 --
+edtb-03         free                 0     0      0      0 b/0 b     0/0     0/0     0/0 --
+edtb-04         free                 0     0      0      0 b/0 b     0/0     0/0     0/0 --
+edtb-01[0]      free                 0     0      0  250gb/250gb   64/64     0/0     1/1 --
+edtb-01[1]      free                 0     0      0  251gb/251gb   64/64     0/0     1/1 --
+edtb-02[0]      free                 0     0      0  250gb/250gb   64/64     0/0     1/1 --
+edtb-02[1]      free                 0     0      0  251gb/251gb   64/64     0/0     1/1 --
+edtb-03[0]      free                 0     0      0  250gb/250gb   64/64     0/0     1/1 --
+edtb-03[1]      free                 0     0      0  251gb/251gb   64/64     0/0     1/1 --
+edtb-04[0]      free                 0     0      0  250gb/250gb   64/64     0/0     1/1 --
+edtb-04[1]      free                 0     0      0  251gb/251gb   64/64     0/0     1/1 --
+</code></pre></div>
+<code>pbsnodes -l</code> - (lowercase  l) see which nodes are down;  The comment often indicates why it is down</p>
+<div class="highlight"><pre><span></span><code>[20220217-21:10:31]&gt; pbsnodes -l
+x3014c0s19b0n0       offline,resv-exclusive Xid 74 -- GPUs need reseat
+x3014c0s25b0n0       offline,resv-exclusive Checking on ConnectX-5 firmware
+</code></pre></div>
+<h2 id="polaris-specific-stuff">Polaris specific stuff</h2>
+<h3 id="polaris-rack-and-dragonfly-group-mappings">Polaris Rack and Dragonfly group mappings</h3>
+<ul>
+<li>Racks contain (7) 6U chassis; Each chassis has 2 nodes for 14 nodes per rack</li>
+<li>The hostnames are of the form xRRPPc0sUUb[0|1]n0 where:<ul>
+<li>RR is the row {30, 31, 32}</li>
+<li>PP is the position in the row {30 goes 1-16, 31 and 32 go 1-12}</li>
+<li>c is chassis and is always 0</li>
+<li>s stands for slot, but in this case is the RU in the rack and values are {1,7,13,19,25,31,37}</li>
+<li>b is BMC controller and is 0 or 1 (each node has its own BMC)</li>
+<li>n is node, but is always 0 since there is only one node per BMC </li>
+</ul>
+</li>
+<li>So, 16+12+12 = 40 racks * 14 nodes per rack = 560 nodes.</li>
+<li>Note that in production group 9 (the last 4 racks) will be the designated on-demand racks</li>
+<li>The management racks are x3000 and X3100 and are dragonfly group 10</li>
+<li>The TDS rack is x3200 and is dragonfly group 11 </li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>g0</th>
+<th>g1</th>
+<th>g2</th>
+<th>g3</th>
+<th>g4</th>
+<th>g5</th>
+<th>g6</th>
+<th>g7</th>
+<th>g8</th>
+<th>g9</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x3001-g0</td>
+<td>x3005-g1</td>
+<td>x3009-g2</td>
+<td>x3013-g3</td>
+<td>x3101-g4</td>
+<td>x3105-g5</td>
+<td>x3109-g6</td>
+<td>x3201-g7</td>
+<td>x3205-g8</td>
+<td>x3209-g9</td>
+</tr>
+<tr>
+<td>x3002-g0</td>
+<td>x3006-g1</td>
+<td>x3010-g2</td>
+<td>x3014-g3</td>
+<td>x3102-g4</td>
+<td>x3106-g5</td>
+<td>x3110-g6</td>
+<td>x3202-g7</td>
+<td>x3206-g8</td>
+<td>x3210-g9</td>
+</tr>
+<tr>
+<td>x3003-g0</td>
+<td>x3007-g1</td>
+<td>x3011-g2</td>
+<td>x3015-g3</td>
+<td>x3103-g4</td>
+<td>x3107-g5</td>
+<td>x3111-g6</td>
+<td>x3203-g7</td>
+<td>x3207-g8</td>
+<td>x3211-g9</td>
+</tr>
+<tr>
+<td>x3004-g0</td>
+<td>x3008-g1</td>
+<td>x3012-g2</td>
+<td>x3016-g3</td>
+<td>x3104-g4</td>
+<td>x3108-g5</td>
+<td>x3112-g6</td>
+<td>x3204-g7</td>
+<td>x3208-g8</td>
+<td>x3212-g9</td>
+</tr>
+<tr>
+<td>## Controlling the execution on your allocated resources</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>### Running MPI+OpenMP Applications</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Once a submitted job is running calculations can be launched on the compute nodes using <code>mpiexec</code> to start an MPI application. Documentation is accessible via <code>man mpiexec</code> and some helpful options follow.</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>* <code>-n</code> total number of MPI ranks</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>* <code>-ppn</code> number of MPI ranks per node</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>* <code>--cpu-bind</code> CPU binding for application</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>* <code>--depth</code> number of cpus per rank (useful with <code>--cpu-bind depth</code>)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>* <code>--env</code> set environment variables (<code>--env OMP_NUM_THREADS=2</code>)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>* <code>--hostfile</code> indicate file with hostnames (the default is <code>--hostfile $PBS_NODEFILE</code>)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>A sample submission script with directives is below for a 4-node job with 32 MPI ranks on each node and 8 OpenMP threads per rank (1 per CPU).</p>
+<div class="highlight"><pre><span></span><code>#!/bin/bash
+#PBS -N AFFINITY
+#PBS -l select=4:ncpus=256
+#PBS -l walltime=0:10:00
+
+NNODES=`wc -l &lt; $PBS_NODEFILE`
+NRANKS=32 # Number of MPI ranks to spawn per node
+NDEPTH=8 # Number of hardware threads per rank (i.e. spacing between MPI ranks)
+NTHREADS=8 # Number of software threads per rank to launch (i.e. OMP_NUM_THREADS)
+
+NTOTRANKS=$(( NNODES * NRANKS ))
+
+echo &quot;NUM_OF_NODES= ${NNODES} TOTAL_NUM_RANKS= ${NTOTRANKS} RANKS_PER_NODE= ${NRANKS} THREADS_PER_RANK= ${NTHREADS}&quot;
+
+cd /home/knight/affinity
+mpiexec --np ${NTOTRANKS} -ppn ${NRANKS} -d ${NDEPTH} --cpu-bind depth -env OMP_NUM_THREADS=${NTHREADS} ./hello_affinity
+</code></pre></div>
+<h3 id="running-gpu-enabled-applications">Running GPU-enabled Applications</h3>
+<p>GPU-enabled applications will similarly run on the compute nodes using the above example script. </p>
+<ul>
+<li>
+<p>The environment variable <code>MPICH_GPU_SUPPORT_ENABLED=1</code> needs to be set if your application requires MPI-GPU support whereby the MPI library sends and recieves data directly from GPU buffers. In this case, it will be important to have the <code>craype-accel-nvidia80</code> module loaded both when compiling your application and during runtime to correctly link against a GPU Transport Layer (GTL) MPI library. Otherwise, you'll likely see <code>GPU_SUPPORT_ENABLED is requested, but GTL library is not linked</code> errors during runtime.</p>
+</li>
+<li>
+<p>If running on a specific GPU or subset of GPUs is desired, then the <code>CUDA_VISIBLE_DEVICES</code> environment variable can be used. For example, if one only wanted an application to access the first two GPUs on a node, then setting <code>CUDA_VISIBLE_DEVICES=0,1</code> could be used.</p>
+</li>
+</ul>
+<h3 id="binding-mpi-ranks-to-gpus">Binding MPI ranks to GPUs</h3>
+<p>The Cray MPI on Polaris does not currently support binding MPI ranks to GPUs. For applications that need this support, this instead can be handled by use of a small helper script that will appropriately set <code>CUDA_VISIBLE_DEVICES</code> for each MPI rank. One example is available <a href="https://github.com/argonne-lcf/GettingStarted/tree/master/Examples/Polaris/affinity_gpu">here</a> where each MPI rank is similarly bound to a single GPU with round-robin assignment.</p>
+<p>A example <code>set_affinity_gpu_polaris.sh</code> script follows where GPUs are assigned round-robin to MPI ranks.
+<div class="highlight"><pre><span></span><code>#!/bin/bash
+num_gpus=4
+gpu=$((${PMI_LOCAL_RANK} % ${num_gpus}))
+export CUDA_VISIBLE_DEVICES=$gpu
+echo “RANK= ${PMI_RANK} LOCAL_RANK= ${PMI_LOCAL_RANK} gpu= ${gpu}”
+exec &quot;$@&quot;
+</code></pre></div>
+This script can be placed just before the executable in the <code>mpiexec</code> command like so.
+<div class="highlight"><pre><span></span><code>mpiexec -n ${NTOTRANKS} --ppn ${NRANKS_PER_NODE} --depth=${NDEPTH} --cpu-bind depth ./set_affinity_gpu_polaris.sh ./hello_affinity
+</code></pre></div>
+Users with different needs, such as assigning multiple GPUs per MPI rank, can modify the above script to suit their needs.</p>
+<h3 id="need-help-from-applications-people-for-this-section">Need help from applications people for this section</h3>
+<ul>
+<li>Thinking of things like:</li>
+<li>How do you set affinity</li>
+<li>Nvidia specific stuff</li>
+<li>There is a PALS specific thing to tell you what rank you are in a node?</li>
+<li>Should Chris cook up example running four mpiexec on different GPUs and separate CPUs or just rely on PBS's vnode (discussion at very top here)?</li>
+</ul>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <!-- Footer -->
+<!-- --------------------------------------------------------------------- -->
+
+<footer>
+<div class="grid">
+
+	<div class="footer--attr">
+		<h2>
+			<span>ALCF</span>
+			A DOE Office of Science User Facility
+	</div>
+
+	<div class="footer--address">
+		<p>
+			Argonne National Laboratory<br>
+			9700 South Cass Avenue<br>
+			Building 240<br>
+			Argonne, IL 60439<br>
+			<a href="mailto:media@alcf.anl.gov">Contact</a>
+		</p>
+	</div>
+
+	<div class="footer--admin">
+		<a href="https://login.anl.gov/idp/profile/SAML2/Redirect/SSO?execution=e1s1">Internal Admin</a>
+	</div>
+
+	<div class="footer--copyright">
+		<p>
+			&copy; 2022 Argonne Leadership Computing Facility
+		</p>
+	</div>
+
+	<div class="footer--logos">
+		<img class="footer--logo-doe" src="/alcf-userguide/images/DOE_ko_300.png">
+		<img class="footer--logo-argonne" src="/alcf-userguide/images/ANL_ko_300.png">
+	</div>
+
+</div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["tabs", "instant", "search.highlight", "search.suggest"], "search": "../../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+        <script src="../../../javascripts/alcf-extra.js"></script>
+      
+    
+  </body>
+</html>

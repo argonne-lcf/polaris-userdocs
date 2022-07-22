@@ -1,0 +1,2487 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../../images/alcf_favicon.ico">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
+    
+    
+      
+        <title>NVIDIA-Nsight - ALCF User Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=proxima-nova:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"proxima-nova";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/alcf-extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+<link rel="stylesheet" href="https://use.typekit.net/pxo0nvo.css">
+
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="alcf" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#nvidia-nsight-tools" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      <!-- Header -->
+<!-- --------------------------------------------------------------------- -->
+
+<!-- component: header -->
+
+
+<header class="md-header" data-md-component="header">
+
+
+<div class="header--primary">
+
+
+<div class="grid">
+
+	<div class="header__site-title">
+		<h1>Argonne Leadership Computing Facility</h1>
+	</div>
+
+
+
+
+
+	<nav class="header__nav-primary">
+		<ul>
+
+
+			<li id="nav-res" class="js-drop" data-menu="menu-res">
+				<a href="https://www.alcf.anl.gov/alcf-resources">ALCF Resources</a>
+
+				<div id="menu-res" class="dropdown js-dropdown-hidden">
+					<nav>
+						<div class="dropdown__intro">
+							<div class="dropdown__intro-subhead">
+								<h2>Leadership Computing Resources</h2>
+							</div>
+							<div class="dropdown__intro-description">
+								<p>
+									The ALCF provides users with access to supercomputing resources that are significantly more powerful than systems typically used for open scientific research.
+								</p>
+							</div>
+						</div>
+
+						<div class="dropdown__links-1">
+							<div class="dropdown__links-group">
+								<h3>Computing Resources</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/aurora">Aurora</a></li>
+									<li><a href="https://www.alcf.anl.gov/polaris">Polaris</a></li>
+									<li><a href="https://www.alcf.anl.gov/alcf-resources/theta">Theta and ThetaGPU</a></li>
+									<li><a href="https://www.alcf.anl.gov/alcf-ai-testbed">ALCF AI Testbed</a></li>
+									<li><a href="https://www.alcf.anl.gov/alcf-resources/cooley">Cooley</a></li>
+									<li><a href="https://www.alcf.anl.gov/alcf-resources/evaluation-testbeds">Evaluation Testbeds</a></li>
+									<li><a href="https://www.alcf.anl.gov/alcf-resources/storage-and-networking">Storage and Networking</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="dropdown__links-2">
+							<div class="dropdown__links-group">
+								<h3>Facility Expertise</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/alcf-resources/facility-expertise">Facility Expertise</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="dropdown__featured">
+							<a href="https://alcf.anl.gov/aurora">
+								<div class="dropdown__featured-title">
+									<h3>
+										Featured: Aurora
+									</h3>
+								</div>
+
+								<div class="dropdown__featured-image">
+									<div class="img-wrapper">
+										<img src="/ai-testbed-userdocs
+/images/aurora.png" />
+									</div>
+								</div>
+							</a>
+						</div>
+
+					</nav>
+				</div>
+			</li>
+
+
+			<li id="nav-sci" class="js-drop" data-menu="menu-sci">
+				<a href="https://www.alcf.anl.gov/science">Science</a>
+
+				<div id="menu-sci" class="dropdown js-dropdown-hidden">
+					<nav>
+						<div class="dropdown__intro">
+							<div class="dropdown__intro-subhead">
+								<h2>Computational Science</h2>
+							</div>
+							<div class="dropdown__intro-description">
+								<p>
+									The ALCF is accelerating scientific discoveries in many disciplines, ranging from chemistry and engineering to physics and materials science.
+								</p>
+							</div>
+						</div>
+
+						<div class="dropdown__links-1">
+							<div class="dropdown__links-group">
+								<h3>Output</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/science/projects">Projects</a></li>
+									<li><a href="https://www.alcf.anl.gov/science/publications">Publications</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="dropdown__links-2">
+							<div class="dropdown__links-group">
+								<h3>Allocation Programs</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/science/incite-allocation-program">INCITE Program</a></li>
+									<li><a href="https://www.alcf.anl.gov/science/alcc-allocation-program">ALCC</a></li>
+									<li><a href="https://www.alcf.anl.gov/science/adsp-allocation-program">ADSP Program</a></li>
+									<li><a href="https://www.alcf.anl.gov/science/directors-discretionary-allocation-program">Director’s Discretionary</a></li>
+									<li><a href="https://www.alcf.anl.gov/science/early-science-program">Early Science Program</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="dropdown__featured">
+							<a href="https://www.alcf.anl.gov/science/projects/Engineering">
+								<div class="dropdown__featured-title">
+									<h3>
+										Featured: Engineering
+									</h3>
+								</div>
+
+								<div class="dropdown__featured-image">
+									<div class="img-wrapper">
+										<img src="/ai-testbed-userdocs/images/engineering.png" />
+									</div>
+								</div>
+							</a>
+						</div>
+
+					</nav>
+				</div>
+			</li>
+
+
+			<li id="nav-cp" class="js-drop" data-menu="menu-cp">
+				<a href="#https://www.alcf.anl.gov/community-and-partnerships">Community and Partnerships</a>
+
+				<div id="menu-cp" class="dropdown js-dropdown-hidden">
+					<nav>
+						<div class="dropdown__intro">
+							<div class="dropdown__intro-subhead">
+								<h2>Growing the HPC Community</h2>
+							</div>
+							<div class="dropdown__intro-description">
+								<p>
+									The ALCF is committed to providing training and outreach opportunities that prepare researchers to efficiently use its leadership computing systems, while also cultivating a diverse and skilled HPC workforce for the future.
+								</p>
+							</div>
+						</div>
+
+						<div class="dropdown__links-1">
+							<div class="dropdown__links-group">
+								<h3>Partnerships</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/community-and-partnerships/industry">Industry</a></li>
+									<li><a href="https://www.alcf.anl.gov/community-and-partnerships/partners">Partners</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="dropdown__links-2">
+							<div class="dropdown__links-group">
+								<h3>Educational Outreach</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/community-and-partnerships/women-in-stem">Women in STEM</a></li>
+									<li><a href="https://www.alcf.anl.gov/community-and-partnerships/student-outreach">Student Outreach</a></li>
+									<li><a href="https://www.alcf.anl.gov/community-and-partnerships/training-researchers">Training Researchers</a></li>
+								</ul>
+							</div>
+						</div>
+
+					</nav>
+				</div>
+			</li>
+
+
+			<li id="nav-abt" class="js-drop" data-menu="menu-abt">
+				<a href="https://www.alcf.anl.gov/about">About</a>
+
+				<div id="menu-abt" class="dropdown js-dropdown-hidden">
+					<nav>
+						<div class="dropdown__intro">
+							<div class="dropdown__intro-subhead">
+								<h2>Accelerating Science</h2>
+							</div>
+							<div class="dropdown__intro-description">
+								<p>
+									The Argonne Leadership Computing Facility enables breakthroughs in science and engineering by providing supercomputing resources and expertise to the research community.
+								</p>
+							</div>
+						</div>
+
+						<div class="dropdown__links-1">
+							<div class="dropdown__links-group">
+								<h3>Get to Know More</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/about/alcf-leadership-team">Leadership</a></li>
+									<li><a href="https://www.alcf.anl.gov/about/people">People</a></li>
+									<li><a href="https://www.alcf.anl.gov/alcf-organizational-chart">Organizational Chart</a></li>
+									<li><a href="https://www.alcf.anl.gov/about/user-advisory-council">User Advisory Council</a></li>
+									<li><a href="https://www.alcf.anl.gov/about/history">History</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="dropdown__links-2">
+							<div class="dropdown__links-group">
+								<h3>Visit</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/about/visiting-alcf">Visiting ALCF</a></li>
+									<li><a href="https://www.alcf.anl.gov/about/tours">Tours</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="dropdown__links-21">
+							<div class="dropdown__links-group">
+								<h3>Latest</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/news">News</a></li>
+									<li><a href="https://www.alcf.anl.gov/about/careers">Careers</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="dropdown__links-22">
+							<div class="dropdown__links-group">
+								<h3>Press Kits</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/alcf-media-kit">ALCF Media Kit</a></li>
+									<li><a href="https://www.alcf.anl.gov/aurora-media-kit">Aurora Media Kit</a></li>
+									<li><a href="https://www.alcf.anl.gov/report-archive">Reports Archive</a></li>
+								</ul>
+							</div>
+						</div>
+
+					</nav>
+				</div>
+			</li>
+
+
+			<li id="nav-sup" class="js-drop" data-menu="menu-sup">
+				<a href="https://www.alcf.anl.gov/support-center">Support Center</a>
+
+				<div id="menu-sup" class="dropdown js-dropdown-hidden">
+					<nav>
+						<div class="dropdown__intro">
+							<div class="dropdown__intro-subhead">
+								<h2>Support Center</h2>
+							</div>
+							<div class="dropdown__intro-description">
+								<p>
+									The ALCF Support Center assists users with support requests related to their ALCF projects.
+								</p>
+							</div>
+						</div>
+
+						<div class="dropdown__links-1">
+							<div class="dropdown__links-group">
+								<h3>Current</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/support-center/machine-status">Machine Status</a></li>
+									<li><a href="https://www.alcf.anl.gov/support-center/facility-updates">Facility Updates</a></li>
+									<li><a href="https://accounts.alcf.anl.gov/home">Accounts Website</a></li>
+								</ul>
+
+								<br>
+
+								<h3>Training</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/support-center/training-assets">Training Videos & Slides</a></li>
+									<li><a href="https://www.alcf.anl.gov/support-center/training-overview">Training Overview</a></li>
+									<li><a href="https://www.alcf.anl.gov/events">Training and Events</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="dropdown__links-2">
+							<div class="dropdown__links-group">
+								<h3>Guides</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/support-center/get-started">Get Started</a></li>
+									<li><a href="https://www.alcf.anl.gov/support-center/account-and-project-management">Account and Project Management</a></li>
+									<li><a href="https://www.alcf.anl.gov/support-center/theta-and-thetagpu">Theta and ThetaGPU</a></li>
+									<li><a href="https://www.alcf.anl.gov/support-center/ai-testbed">AI Testbed</a></li>
+									<li><a href="https://www.alcf.anl.gov/support-center/cooley">Cooley</a></li>
+									<li><a href="https://www.alcf.anl.gov/support-center/aurora">Aurora</a></li>
+									<li><a href="https://www.alcf.anl.gov/support-center/facility-policies">Facility Policies</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="dropdown__featured">
+							<a href="https://www.alcf.anl.gov/support-center/get-started">
+								<div class="dropdown__featured-title">
+									<h3>
+										Featured: Get Started
+									</h3>
+								</div>
+
+								<div class="dropdown__featured-image">
+									<div class="img-wrapper">
+										<img src="/ai-testbed-userdocs/images/getstarted.png" />
+									</div>
+								</div>
+							</a>
+						</div>
+
+					</nav>
+				</div>
+			</li>
+
+
+		</ul>
+	</nav>
+
+	<nav class="header__nav-secondary">
+		<!-- wrapper needed to hang right -->
+		<div class="header__nav-secondary--right"> 
+			<ul>
+				<li><a href="https://www.alcf.anl.gov/news"> News </a></li>
+				<li><a href="https://www.alcf.anl.gov/events"> Events </a></li>
+				<li><a href="https://www.alcf.anl.gov/about/people"> People </a></li>
+				<li><a href="https://www.alcf.anl.gov/about/careers"> Careers </a></li>
+			</ul>
+
+			
+			  <label class="md-header__button md-icon" for="__search">
+			    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+			  </label>
+
+			  <!-- Search interface -->
+			  <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+			
+
+		</div>
+	</nav>
+
+</div>
+</div> <!-- end header--primary -->
+
+
+
+
+
+
+
+
+
+<!-- Mobile Header -->
+<!-- --------------------------------------------------------------------- -->
+
+<div class="header--mobile">
+
+	<div class="grid">
+
+		<div class="header__site-title">
+			<h1>Argonne Leadership<br>Computing Facility</h1>		
+		</div>
+
+
+		<div class="header__mobIcons">
+			<div id="js-mobileOpen" class="header__menu-toggle">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"></path></svg>		
+			</div>
+
+			
+			  <label class="md-header__button md-icon" for="__search">
+			    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+			  </label>
+
+			  <!-- Search interface -->
+			  <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+			
+		</div>
+
+	</div>
+
+
+	<div id="js-mobileMenu" class="header__dropdownBG menu--closed">
+
+	<div class="grid">
+
+		<div class="header__site-title">
+			<h1>Argonne Leadership<br>Computing Facility</h1>		
+		</div>
+
+		<div id="js-mobileClose" class="header__mobIcons">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg>		
+		</div>
+
+	</div>
+
+
+	<div class="grid">
+
+		<nav class="header__nav-primary">
+
+			<ul>
+
+				<li>
+					<a href="#" class="drawer-head"data-mobmenu="mobmenu-res">ALCF Resources <span class="drawer-arrow">&#9660;</span></a>
+
+					<div id="mobmenu-res" class="dropdown menu--closed">
+
+						<div class="dropdown__links-1">
+							<div class="dropdown__links-group">
+								<h3>Computing Resources</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/aurora">Aurora</a></li>
+									<li><a href="https://www.alcf.anl.gov/polaris">Polaris</a></li>
+									<li><a href="https://www.alcf.anl.gov/alcf-resources/theta">Theta and ThetaGPU</a></li>
+									<li><a href="https://www.alcf.anl.gov/alcf-ai-testbed">ALCF AI Testbed</a></li>
+									<li><a href="https://www.alcf.anl.gov/alcf-resources/cooley">Cooley</a></li>
+									<li><a href="https://www.alcf.anl.gov/alcf-resources/evaluation-testbeds">Evaluation Testbeds</a></li>
+									<li><a href="https://www.alcf.anl.gov/alcf-resources/storage-and-networking">Storage and Networking</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="dropdown__links-2">
+							<div class="dropdown__links-group">
+								<h3>Facility Expertise</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/alcf-resources/facility-expertise">Facility Expertise</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</li>
+
+
+				<li>
+					<a href="#" class="drawer-head" data-mobmenu="mobmenu-sci">Science <span class="drawer-arrow">&#9660;</span></a>
+
+					<div id="mobmenu-sci" class="dropdown menu--closed">
+						<div class="dropdown__links-1">
+							<div class="dropdown__links-group">
+								<h3>Output</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/science/projects">Projects</a></li>
+									<li><a href="https://www.alcf.anl.gov/science/publications">Publications</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="dropdown__links-2">
+							<div class="dropdown__links-group">
+								<h3>Allocation Programs</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/science/incite-allocation-program">INCITE Program</a></li>
+									<li><a href="https://www.alcf.anl.gov/science/alcc-allocation-program">ALCC</a></li>
+									<li><a href="https://www.alcf.anl.gov/science/adsp-allocation-program">ADSP Program</a></li>
+									<li><a href="https://www.alcf.anl.gov/science/directors-discretionary-allocation-program">Director’s Discretionary</a></li>
+									<li><a href="https://www.alcf.anl.gov/science/early-science-program">Early Science Program</a></li>
+								</ul>
+							</div>
+						</div>
+				</div>
+
+				</li>
+
+
+				<li>
+					<a href="#" class="drawer-head" data-mobmenu="mobmenu-cp">Community and Partnerships <span class="drawer-arrow">&#9660;</span></a>
+
+					<div id="mobmenu-cp" class="dropdown menu--closed">
+						<div class="dropdown__links-1">
+							<div class="dropdown__links-group">
+								<h3>Partnerships</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/community-and-partnerships/industry">Industry</a></li>
+									<li><a href="https://www.alcf.anl.gov/community-and-partnerships/partners">Partners</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="dropdown__links-2">
+							<div class="dropdown__links-group">
+								<h3>Educational Outreach</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/community-and-partnerships/women-in-stem">Women in STEM</a></li>
+									<li><a href="https://www.alcf.anl.gov/community-and-partnerships/student-outreach">Student Outreach</a></li>
+									<li><a href="https://www.alcf.anl.gov/community-and-partnerships/training-researchers">Training Researchers</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</li>
+
+
+				<li>
+					<a href="#" class="drawer-head" data-mobmenu="mobmenu-abt">About <span class="drawer-arrow">&#9660;</span></a>
+
+					<div id="mobmenu-abt" class="dropdown menu--closed">
+						<div class="dropdown__links-1">
+							<div class="dropdown__links-group">
+								<h3>Get to Know More</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/about/alcf-leadership-team">Leadership</a></li>
+									<li><a href="https://www.alcf.anl.gov/about/people">People</a></li>
+									<li><a href="https://www.alcf.anl.gov/alcf-organizational-chart">Organizational Chart</a></li>
+									<li><a href="https://www.alcf.anl.gov/about/user-advisory-council">User Advisory Council</a></li>
+									<li><a href="https://www.alcf.anl.gov/about/history">History</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="dropdown__links-2">
+							<div class="dropdown__links-group">
+								<h3>Visit</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/about/visiting-alcf">Visiting ALCF</a></li>
+									<li><a href="https://www.alcf.anl.gov/about/tours">Tours</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="dropdown__links-21">
+							<div class="dropdown__links-group">
+								<h3>Latest</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/news">News</a></li>
+									<li><a href="https://www.alcf.anl.gov/about/careers">Careers</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="dropdown__links-22">
+							<div class="dropdown__links-group">
+								<h3>Press Kits</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/alcf-media-kit">ALCF Media Kit</a></li>
+									<li><a href="https://www.alcf.anl.gov/aurora-media-kit">Aurora Media Kit</a></li>
+									<li><a href="https://www.alcf.anl.gov/report-archive">Reports Archive</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</li>
+
+
+				<li>
+					<a href="#" class="drawer-head" data-mobmenu="mobmenu-sup">Support Center <span class="drawer-arrow">&#9660;</span></a>
+
+					<div id="mobmenu-sup" class="dropdown menu--closed">
+						<div class="dropdown__links-1">
+							<div class="dropdown__links-group">
+								<h3>Current</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/support-center/machine-status">Machine Status</a></li>
+									<li><a href="https://www.alcf.anl.gov/support-center/facility-updates">Facility Updates</a></li>
+									<li><a href="https://accounts.alcf.anl.gov/home">Accounts Website</a></li>
+								</ul>
+								<br>
+								<h3>Training</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/support-center/training-assets">Training Videos & Slides</a></li>
+									<li><a href="https://www.alcf.anl.gov/support-center/training-overview">Training Overview</a></li>
+									<li><a href="https://www.alcf.anl.gov/events">Training and Events</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="dropdown__links-2">
+							<div class="dropdown__links-group">
+								<h3>Guides</h3>
+								<ul>
+									<li><a href="https://www.alcf.anl.gov/support-center/get-started">Get Started</a></li>
+									<li><a href="https://www.alcf.anl.gov/support-center/account-and-project-management">Account and Project Management</a></li>
+									<li><a href="https://www.alcf.anl.gov/support-center/theta-and-thetagpu">Theta and ThetaGPU</a></li>
+									<li><a href="https://www.alcf.anl.gov/support-center/cooley">Cooley</a></li>
+									<li><a href="https://www.alcf.anl.gov/support-center/aurora">Aurora</a></li>
+									<li><a href="https://www.alcf.anl.gov/support-center/facility-policies">Facility Policies</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</li>
+
+
+			</ul>
+		</nav>
+
+
+
+
+
+	  <nav class="header__nav-secondary">
+			<!-- wrapper needed to hang right -->
+			<!-- <div class="header__nav-secondary--right">  -->
+				<div class="dropdown__links-1">
+					<ul>
+						<li><a href="https://www.alcf.anl.gov/news"> News </a></li>
+						<li><a href="https://www.alcf.anl.gov/events"> Events </a></li>
+					</ul>
+				</div>
+				<div class="dropdown__links-2">
+					<ul>
+						<li><a href="https://www.alcf.anl.gov/about/people"> People </a></li>
+						<li><a href="https://www.alcf.anl.gov/about/careers"> Careers </a></li>
+					</ul>
+				</div>
+			<!-- </div> -->
+		</nav>
+
+
+
+	</div> <!-- end dropdown grid -->
+	</div> <!-- end dropdown background -->
+
+
+</div> <!-- end mobile header -->
+
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="ALCF User Guide" class="md-nav__button md-logo" aria-label="ALCF User Guide" data-md-component="logo">
+      
+  <img src="../../../images/Argonne_wireframe_white_transparent.png" alt="logo">
+
+    </a>
+    ALCF User Guide
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/argonne-lcf/polaris-userdocs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    argonne-lcf/alcf-userguide
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Polaris
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Polaris" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Polaris
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/" class="md-nav__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../known-issues/" class="md-nav__link">
+        Known Issues
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_3">
+          Hardware Overview
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Hardware Overview" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Hardware Overview
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware-overview/machine-overview/" class="md-nav__link">
+        Polaris Machine Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware-overview/slingshot-network/" class="md-nav__link">
+        Slingshot Network
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_4">
+          Compiling and Linking
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Compiling and Linking" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          Compiling and Linking
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../compiling-and-linking/compiling-and-linking-overview/" class="md-nav__link">
+        Compiling and Linking Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../compiling-and-linking/polaris-programming-models/" class="md-nav__link">
+        Programming Models
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../compiling-and-linking/polaris-example-program-makefile/" class="md-nav__link">
+        Example Program and Makefile
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../compiling-and-linking/cce-compilers-polaris/" class="md-nav__link">
+        CCE Compilers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../compiling-and-linking/gnu-compilers-polaris/" class="md-nav__link">
+        GNU Compilers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../compiling-and-linking/nvidia-compiler-polaris/" class="md-nav__link">
+        NVIDIA Compilers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../compiling-and-linking/llvm-compilers-polaris/" class="md-nav__link">
+        LLVM Compilers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../compiling-and-linking/continuous-integration-polaris/" class="md-nav__link">
+        Continuous Integration
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5" type="checkbox" id="__nav_2_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_5">
+          Queueing and Running Jobs on Polaris
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Queueing and Running Jobs on Polaris" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_5">
+          <span class="md-nav__icon md-icon"></span>
+          Queueing and Running Jobs on Polaris
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../queueing-and-running-jobs/job-and-queue-scheduling/" class="md-nav__link">
+        Job Scheduling and Execution
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../queueing-and-running-jobs/pbs-qsub-options-table/" class="md-nav__link">
+        Cobalt to PBS option Comparison
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../queueing-and-running-jobs/gronkulator/" class="md-nav__link">
+        The Grounkulator (Job Status Display)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../queueing-and-running-jobs/pbs-admin-quick-start-guide/" class="md-nav__link">
+        PBS Admin Quick Start Guide
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6" type="checkbox" id="__nav_2_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_6">
+          Data Management
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Data Management" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_6">
+          <span class="md-nav__icon md-icon"></span>
+          Data Management
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-management/acdc/acdc-overview/" class="md-nav__link">
+        ALCF Community Data Co-Op
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-management/acdc/eagle-data-sharing/" class="md-nav__link">
+        Sharing on Eagle
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6_3" type="checkbox" id="__nav_2_6_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_6_3">
+          Data Transfer
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Data Transfer" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_6_3">
+          <span class="md-nav__icon md-icon"></span>
+          Data Transfer
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-management/data-transfer/sftp-scp/" class="md-nav__link">
+        SFTP and SCP
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-management/data-transfer/using-globus/" class="md-nav__link">
+        Using Globus
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6_4" type="checkbox" id="__nav_2_6_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_6_4">
+          File System & Storage
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="File System & Storage" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_6_4">
+          <span class="md-nav__icon md-icon"></span>
+          File System & Storage
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-management/filesystem-and-storage/polaris-disk-quota/" class="md-nav__link">
+        Polaris Disk Quota
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_7" type="checkbox" id="__nav_2_7" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_7">
+          Applications and Libraries
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Applications and Libraries" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_7">
+          <span class="md-nav__icon md-icon"></span>
+          Applications and Libraries
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_7_1" type="checkbox" id="__nav_2_7_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_7_1">
+          Applications
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Applications" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_7_1">
+          <span class="md-nav__icon md-icon"></span>
+          Applications
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../applications-and-libraries/applications/lammps/" class="md-nav__link">
+        LAMMPS
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_7_2" type="checkbox" id="__nav_2_7_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_7_2">
+          Libraries
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Libraries" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_7_2">
+          <span class="md-nav__icon md-icon"></span>
+          Libraries
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../applications-and-libraries/libraries/math-libraries/" class="md-nav__link">
+        Math Libraries
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_8" type="checkbox" id="__nav_2_8" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_8">
+          Data Science Workflows
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Data Science Workflows" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_8">
+          <span class="md-nav__icon md-icon"></span>
+          Data Science Workflows
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-science-workflows/containers/containers/" class="md-nav__link">
+        Containers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-science-workflows/balsam/" class="md-nav__link">
+        Balsam
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_9" type="checkbox" id="__nav_2_9" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_9">
+          Programming Models
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Programming Models" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_9">
+          <span class="md-nav__icon md-icon"></span>
+          Programming Models
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programming-models/openmp-polaris/" class="md-nav__link">
+        OpenMP
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programming-models/sycl-polaris/" class="md-nav__link">
+        SYCL
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_10" type="checkbox" id="__nav_2_10" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_10">
+          Debugging Tools
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Debugging Tools" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_10">
+          <span class="md-nav__icon md-icon"></span>
+          Debugging Tools
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../debugging-tools/debugging-overview/" class="md-nav__link">
+        Debugging Tools Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../debugging-tools/CUDA-GDB/" class="md-nav__link">
+        CUDA-GDB
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_11" type="checkbox" id="__nav_2_11" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_11">
+          Performance Tools
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Performance Tools" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_11">
+          <span class="md-nav__icon md-icon"></span>
+          Performance Tools
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../performance-overview/" class="md-nav__link">
+        Performance Tools Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          NVIDIA-Nsight
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        NVIDIA-Nsight
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-by-step-guide" class="md-nav__link">
+    Step-by-step guide
+  </a>
+  
+    <nav class="md-nav" aria-label="Step-by-step guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-part-on-polaris" class="md-nav__link">
+    Common part on Polaris
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nsight-systems" class="md-nav__link">
+    Nsight Systems
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nsight-compute" class="md-nav__link">
+    Nsight Compute
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-processing-the-profiled-data" class="md-nav__link">
+    Post-processing the profiled data
+  </a>
+  
+    <nav class="md-nav" aria-label="Post-processing the profiled data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#post-processing-via-cli" class="md-nav__link">
+    Post-processing via CLI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-processing-on-your-local-system-via-gui" class="md-nav__link">
+    Post-processing on your local system via GUI
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#more-options-for-performance-analysis-with-nsight-systems-and-nsight-compute" class="md-nav__link">
+    More options for performance analysis with Nsight Systems and Nsight Compute
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-quick-example" class="md-nav__link">
+    A quick example
+  </a>
+  
+    <nav class="md-nav" aria-label="A quick example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nsight-systems_1" class="md-nav__link">
+    Nsight Systems
+  </a>
+  
+    <nav class="md-nav" aria-label="Nsight Systems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#running-a-stream-benchmark-with-nsight-systems" class="md-nav__link">
+    Running a stream benchmark with Nsight Systems
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reviewing-the-nsight-systems-data-via-gui" class="md-nav__link">
+    Reviewing the Nsight Systems data via GUI
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nsight-compute_1" class="md-nav__link">
+    Nsight Compute
+  </a>
+  
+    <nav class="md-nav" aria-label="Nsight Compute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#running-a-stream-benchmark-with-nsight-compute-for-triad_kernel" class="md-nav__link">
+    Running a stream benchmark with Nsight Compute for triad_kernel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reviewing-the-nsight-compute-data-via-gui" class="md-nav__link">
+    Reviewing the Nsight Compute data via GUI
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Edith (Edge Dev Testbed)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Edith (Edge Dev Testbed)" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Edith (Edge Dev Testbed)
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../queueing-and-running-jobs/edtb/" class="md-nav__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-by-step-guide" class="md-nav__link">
+    Step-by-step guide
+  </a>
+  
+    <nav class="md-nav" aria-label="Step-by-step guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-part-on-polaris" class="md-nav__link">
+    Common part on Polaris
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nsight-systems" class="md-nav__link">
+    Nsight Systems
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nsight-compute" class="md-nav__link">
+    Nsight Compute
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-processing-the-profiled-data" class="md-nav__link">
+    Post-processing the profiled data
+  </a>
+  
+    <nav class="md-nav" aria-label="Post-processing the profiled data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#post-processing-via-cli" class="md-nav__link">
+    Post-processing via CLI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-processing-on-your-local-system-via-gui" class="md-nav__link">
+    Post-processing on your local system via GUI
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#more-options-for-performance-analysis-with-nsight-systems-and-nsight-compute" class="md-nav__link">
+    More options for performance analysis with Nsight Systems and Nsight Compute
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-quick-example" class="md-nav__link">
+    A quick example
+  </a>
+  
+    <nav class="md-nav" aria-label="A quick example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nsight-systems_1" class="md-nav__link">
+    Nsight Systems
+  </a>
+  
+    <nav class="md-nav" aria-label="Nsight Systems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#running-a-stream-benchmark-with-nsight-systems" class="md-nav__link">
+    Running a stream benchmark with Nsight Systems
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reviewing-the-nsight-systems-data-via-gui" class="md-nav__link">
+    Reviewing the Nsight Systems data via GUI
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nsight-compute_1" class="md-nav__link">
+    Nsight Compute
+  </a>
+  
+    <nav class="md-nav" aria-label="Nsight Compute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#running-a-stream-benchmark-with-nsight-compute-for-triad_kernel" class="md-nav__link">
+    Running a stream benchmark with Nsight Compute for triad_kernel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reviewing-the-nsight-compute-data-via-gui" class="md-nav__link">
+    Reviewing the Nsight Compute data via GUI
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+  <a href="https://github.com/argonne-lcf/polaris-userdocs/edit/master/docs/polaris/performance-tools/NVIDIA-Nsight.md" title="Edit this page" class="md-content__button md-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+
+<h1 id="nvidia-nsight-tools">NVIDIA Nsight tools</h1>
+<h2 id="references">References</h2>
+<p><a href="https://docs.nvidia.com/nsight-systems/UserGuide/index.html">NVIDIA Nsight Systems Documentation</a><br />
+<a href="https://docs.nvidia.com/nsight-compute/NsightCompute/index.html">NVIDIA Nsight Compute Documentation</a></p>
+<h2 id="introduction">Introduction</h2>
+<p>NVIDIA® Nsight™ Systems provides developers a system-wide visualization of an applications performance. Developers can optimize bottlenecks to scale efficiently across any number or size of CPUs and GPUs on Polaris. For further optimizations to compute kernels developers should use Nsight Compute.</p>
+<p>The NVIDIA Nsight Compute is an interactive kernel profiler for CUDA applications. It provides detailed performance metrics and API debugging via a user interface and command line tool. </p>
+<p>In addition, the baseline feature of this tool allows users to compare results within the tool. NVIDIA Nsight Compute provides a customizable and data-driven user interface,  metric collection, and can be extended with analysis scripts for post-processing results.</p>
+<h2 id="step-by-step-guide">Step-by-step guide</h2>
+<h3 id="common-part-on-polaris">Common part on Polaris</h3>
+<p>Build your application for Polaris, and then submit your job script to Polaris or start an interactive job mode on Polaris as follows:<br />
+<div class="highlight"><pre><span></span><code>$ qsub -I -l select=1 -l walltime=1:00:00
+
+$ nsys --version
+NVIDIA Nsight Systems version 2021.3.1.54-ee9c30a
+
+$ ncu --version
+NVIDIA (R) Nsight Compute Command Line Profiler
+Copyright (c) 2018-2021 NVIDIA Corporation
+Version 2021.2.1.0 (build 30182073) (public-release)
+</code></pre></div></p>
+<h3 id="nsight-systems">Nsight Systems</h3>
+<p>Run your application with Nsight Systems as follows:<br />
+<div class="highlight"><pre><span></span><code>$ nsys profile -o {output_filename} --stats=true ./{your_application}
+</code></pre></div></p>
+<h3 id="nsight-compute">Nsight Compute</h3>
+<p>Run your application with Nsight Compute.<br />
+<div class="highlight"><pre><span></span><code>$ ncu --set detailed -k {kernel_name} -o {output_filename} ./{your_application}
+</code></pre></div></p>
+<p>Remark: Without -o option, Nsight Compute provides performance data as a standard output</p>
+<h3 id="post-processing-the-profiled-data">Post-processing the profiled data</h3>
+<h4 id="post-processing-via-cli">Post-processing via CLI</h4>
+<div class="highlight"><pre><span></span><code>$ nsys stats {output_filename}.qdrep
+$ ncu -i {output_filename}.ncu-rep  
+</code></pre></div>
+<h4 id="post-processing-on-your-local-system-via-gui">Post-processing on your local system via GUI</h4>
+<ul>
+<li>Install NVIDIA Nsight Systems and NVIDIA Nsight Compute after downloading both of them from the  <a href="https://developer.nvidia.com/">NVIDIA Developer Zone</a>. <br />
+Remark: Local client version should be the same as or newer than NVIDIA Nsight tools on Polaris. </li>
+<li>Download nsys output files (i.e., ending with .qdrep and . sqlite) to your local system, and then open them with NVIDIA Nsight Systems on your local system.  </li>
+<li>Download ncu output files (i.e., ending with .ncu-rep) to your local system, and then open them with NVIDIA Nsight Compute on your local system.  </li>
+</ul>
+<h3 id="more-options-for-performance-analysis-with-nsight-systems-and-nsight-compute">More options for performance analysis with Nsight Systems and Nsight Compute</h3>
+<div class="highlight"><pre><span></span><code>$ nsys --help
+$ ncu --help
+</code></pre></div>
+<h2 id="a-quick-example">A quick example</h2>
+<h3 id="nsight-systems_1">Nsight Systems</h3>
+<h4 id="running-a-stream-benchmark-with-nsight-systems">Running a stream benchmark with Nsight Systems</h4>
+<div class="highlight"><pre><span></span><code>jkwack@x3008c0s13b1n0:~/BabelStream/build_polaris&gt; nsys profile -o JKreport-nsys-BableStream --stats=true ./cuda-stream
+Warning: LBR backtrace method is not supported on this platform. DWARF backtrace method will be used.
+Collecting data...
+BabelStream
+Version: 4.0
+Implementation: CUDA
+Running kernels 100 times
+Precision: double
+Array size: 268.4 MB (=0.3 GB)
+Total size: 805.3 MB (=0.8 GB)
+Using CUDA device NVIDIA A100-SXM4-40GB
+Driver: 11040
+Function    MBytes/sec  Min (sec)   Max         Average     
+Copy        1368294.603 0.00039     0.00044     0.00039     
+Mul         1334324.779 0.00040     0.00051     0.00041     
+Add         1358476.737 0.00059     0.00060     0.00059     
+Triad       1366095.332 0.00059     0.00059     0.00059     
+Dot         1190200.569 0.00045     0.00047     0.00046     
+Processing events...
+Saving temporary &quot;/var/tmp/pbs.308834.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov/nsys-report-f594-c524-6b4c-300a.qdstrm&quot; file to disk...
+
+Creating final output files...
+Processing [===============================================================100%]
+Saved report file to &quot;/var/tmp/pbs.308834.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov/nsys-report-f594-c524-6b4c-300a.qdrep&quot;
+Exporting 7675 events: [===================================================100%]
+
+Exported successfully to
+/var/tmp/pbs.308834.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov/nsys-report-f594-c524-6b4c-300a.sqlite
+
+
+CUDA API Statistics:
+
+ Time(%)  Total Time (ns)  Num Calls  Average (ns)  Minimum (ns)  Maximum (ns)  StdDev (ns)           Name         
+ -------  ---------------  ---------  ------------  ------------  ------------  ------------  ---------------------
+    41.5      197,225,738        401     491,834.8       386,695       592,751      96,647.5  cudaDeviceSynchronize
+    35.4      168,294,004          4  42,073,501.0       144,211   167,547,885  83,649,622.0  cudaMalloc           
+    22.5      106,822,589        103   1,037,112.5       446,617    20,588,840   3,380,727.4  cudaMemcpy           
+     0.4        1,823,597        501       3,639.9         3,166        24,125       1,228.9  cudaLaunchKernel     
+     0.2        1,166,186          4     291,546.5       130,595       431,599     123,479.8  cudaFree             
+
+
+
+CUDA Kernel Statistics:
+
+ Time(%)  Total Time (ns)  Instances  Average (ns)  Minimum (ns)  Maximum (ns)  StdDev (ns)                             Name                           
+ -------  ---------------  ---------  ------------  ------------  ------------  -----------  ----------------------------------------------------------
+    24.5       58,415,138        100     584,151.4       582,522       585,817        543.0  void add_kernel&lt;double&gt;(const T1 *, const T1 *, T1 *)     
+    24.4       58,080,329        100     580,803.3       579,802       582,586        520.5  void triad_kernel&lt;double&gt;(T1 *, const T1 *, const T1 *)   
+    18.3       43,602,345        100     436,023.5       430,555       445,979      2,619.5  void dot_kernel&lt;double&gt;(const T1 *, const T1 *, T1 *, int)
+    16.5       39,402,677        100     394,026.8       392,444       395,708        611.5  void mul_kernel&lt;double&gt;(T1 *, const T1 *)                 
+    16.1       38,393,119        100     383,931.2       382,556       396,892      1,434.1  void copy_kernel&lt;double&gt;(const T1 *, T1 *)                
+     0.2          523,355          1     523,355.0       523,355       523,355          0.0  void init_kernel&lt;double&gt;(T1 *, T1 *, T1 *, T1, T1, T1)    
+
+
+
+CUDA Memory Operation Statistics (by time):
+
+ Time(%)  Total Time (ns)  Count  Average (ns)  Minimum (ns)  Maximum (ns)  StdDev (ns)      Operation     
+ -------  ---------------  -----  ------------  ------------  ------------  -----------  ------------------
+   100.0       61,323,171    103     595,370.6         2,399    20,470,146  3,439,982.0  [CUDA memcpy DtoH]
+
+
+
+CUDA Memory Operation Statistics (by size):
+
+ Total (MB)  Count  Average (MB)  Minimum (MB)  Maximum (MB)  StdDev (MB)      Operation     
+ ----------  -----  ------------  ------------  ------------  -----------  ------------------
+    805.511    103         7.820         0.002       268.435       45.361  [CUDA memcpy DtoH]
+
+
+
+Operating System Runtime API Statistics:
+
+ Time(%)  Total Time (ns)  Num Calls  Average (ns)  Minimum (ns)  Maximum (ns)  StdDev (ns)        Name     
+ -------  ---------------  ---------  ------------  ------------  ------------  ------------  --------------
+    85.9      600,896,697         20  30,044,834.9         3,477   100,141,768  42,475,064.1  poll          
+    13.5       94,610,402      1,201      78,776.4         1,002    11,348,375     402,562.6  ioctl         
+     0.2        1,374,312         79      17,396.4         3,486       434,715      48,015.2  mmap64        
+     0.1          877,705         51      17,209.9         1,031       748,723     104,491.6  fopen         
+     0.1          741,969         12      61,830.8        17,272       256,852      64,706.5  sem_timedwait 
+     0.1          529,563        120       4,413.0         1,292        20,579       2,134.3  open64        
+     0.0          251,602          4      62,900.5        57,337        72,126       6,412.6  pthread_create
+     0.0           93,461         18       5,192.3         1,011        19,386       4,401.0  mmap          
+     0.0           37,621         11       3,420.1         1,302        11,672       2,867.6  munmap        
+     0.0           35,735          9       3,970.6         1,723         6,251       1,477.2  fgetc         
+     0.0           33,533          1      33,533.0        33,533        33,533           0.0  fgets         
+     0.0           26,832         13       2,064.0         1,452         3,366         542.6  write         
+     0.0           21,341          5       4,268.2         1,213         9,738       3,378.3  putc          
+     0.0           20,838          6       3,473.0         1,763         6,853       1,801.1  open          
+     0.0           17,016         10       1,701.6         1,523         1,834          96.9  read          
+     0.0           11,430          8       1,428.8         1,082         1,583         151.9  fclose        
+     0.0            6,202          1       6,202.0         6,202         6,202           0.0  pipe2         
+     0.0            5,961          2       2,980.5         2,254         3,707       1,027.4  socket        
+     0.0            5,670          2       2,835.0         2,795         2,875          56.6  fwrite        
+     0.0            5,481          1       5,481.0         5,481         5,481           0.0  connect       
+     0.0            5,279          2       2,639.5         1,743         3,536       1,267.8  fread         
+     0.0            1,082          1       1,082.0         1,082         1,082           0.0  bind          
+
+Report file moved to &quot;/home/jkwack/BabelStream/build_polaris/JKreport-nsys-BableStream.qdrep&quot;
+Report file moved to &quot;/home/jkwack/BabelStream/build_polaris/JKreport-nsys-BableStream.sqlite&quot;
+</code></pre></div>
+<h4 id="reviewing-the-nsight-systems-data-via-gui">Reviewing the Nsight Systems data via GUI</h4>
+<p><img alt="Nsys_screenshot" src="../Images/JK_Nsys_plot01.png" /></p>
+<h3 id="nsight-compute_1">Nsight Compute</h3>
+<h4 id="running-a-stream-benchmark-with-nsight-compute-for-triad_kernel">Running a stream benchmark with Nsight Compute for triad_kernel</h4>
+<div class="highlight"><pre><span></span><code>jkwack@x3008c0s13b1n0:~/BabelStream/build_polaris&gt; ncu --set detailed -k triad_kernel -o JKreport-ncu_detailed-triad_kernel-BableStream ./cuda-stream
+BabelStream
+Version: 4.0
+Implementation: CUDA
+Running kernels 100 times
+Precision: double
+Array size: 268.4 MB (=0.3 GB)
+Total size: 805.3 MB (=0.8 GB)
+==PROF== Connected to process 56600 (/home/jkwack/BabelStream/build_polaris/cuda-stream)
+Using CUDA device NVIDIA A100-SXM4-40GB
+Driver: 11040
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+==PROF== Profiling &quot;triad_kernel&quot;: 0%....50%....100% - 18 passes
+Function    MBytes/sec  Min (sec)   Max         Average     
+Copy        1331076.105 0.00040     0.00042     0.00041     
+Mul         1304696.608 0.00041     0.00043     0.00042     
+Add         1322600.587 0.00061     0.00062     0.00061     
+Triad       1327.700    0.60654     0.62352     0.61106     
+Dot         850376.762  0.00063     0.00070     0.00065     
+==PROF== Disconnected from process 56600
+==PROF== Report: /home/jkwack/BabelStream/build_polaris/JKreport-ncu_detailed-triad_kernel-BableStream.ncu-rep
+</code></pre></div>
+<h4 id="reviewing-the-nsight-compute-data-via-gui">Reviewing the Nsight Compute data via GUI</h4>
+<p><img alt="Ncu_Details" src="../Images/JK_Ncu_Plots_Details.png" />
+<img alt="Ncu_SOL" src="../Images/JK_Ncu_Plots_SOL.png" />
+<img alt="Ncu_Roofline" src="../Images/JK_Ncu_Plots_Roofline.png" />
+<img alt="Ncu_sources" src="../Images/JK_Ncu_Plots_sources.png" /></p>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <!-- Footer -->
+<!-- --------------------------------------------------------------------- -->
+
+<footer>
+<div class="grid">
+
+	<div class="footer--attr">
+		<h2>
+			<span>ALCF</span>
+			A DOE Office of Science User Facility
+	</div>
+
+	<div class="footer--address">
+		<p>
+			Argonne National Laboratory<br>
+			9700 South Cass Avenue<br>
+			Building 240<br>
+			Argonne, IL 60439<br>
+			<a href="mailto:media@alcf.anl.gov">Contact</a>
+		</p>
+	</div>
+
+	<div class="footer--admin">
+		<a href="https://login.anl.gov/idp/profile/SAML2/Redirect/SSO?execution=e1s1">Internal Admin</a>
+	</div>
+
+	<div class="footer--copyright">
+		<p>
+			&copy; 2022 Argonne Leadership Computing Facility
+		</p>
+	</div>
+
+	<div class="footer--logos">
+		<img class="footer--logo-doe" src="/alcf-userguide/images/DOE_ko_300.png">
+		<img class="footer--logo-argonne" src="/alcf-userguide/images/ANL_ko_300.png">
+	</div>
+
+</div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["tabs", "instant", "search.highlight", "search.suggest"], "search": "../../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+        <script src="../../../javascripts/alcf-extra.js"></script>
+      
+    
+  </body>
+</html>
